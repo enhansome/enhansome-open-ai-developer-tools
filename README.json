@@ -1,0 +1,112 @@
+{
+  "items": [
+    {
+      "description": "Agents that read, write, and refactor code in your repo.",
+      "items": [],
+      "title": "Coding Agents & Pair Programmers"
+    },
+    {
+      "description": "Prompt in, deployed full-stack app out.",
+      "items": [],
+      "title": "Prompt-to-App Builders"
+    },
+    {
+      "description": "Long-running agents with memory, goals, and self-direction.",
+      "items": [],
+      "title": "Autonomous & Persistent Agents"
+    },
+    {
+      "description": "Where agent-generated code actually runs, and how agents touch the web.",
+      "items": [],
+      "title": "Agent Sandboxes & Browser Control"
+    },
+    {
+      "description": "Libraries for building multi-agent and tool-using systems.",
+      "items": [],
+      "title": "Agent Frameworks & Orchestration"
+    },
+    {
+      "description": "The emerging standard for connecting models to tools and data.",
+      "items": [],
+      "title": "Model Context Protocol (MCP)"
+    },
+    {
+      "description": "Run models on your own hardware.",
+      "items": [],
+      "title": "Local Inference Engines"
+    },
+    {
+      "description": "Serving models at scale.",
+      "items": [],
+      "title": "Inference Servers & Gateways"
+    },
+    {
+      "description": "",
+      "items": [],
+      "title": "Chat UIs & Frontends"
+    },
+    {
+      "description": "",
+      "items": [],
+      "title": "Vector Databases"
+    },
+    {
+      "description": "The retrieval quality layer. Swapping your embedding model usually beats swapping your vector database.",
+      "items": [],
+      "title": "Embeddings & Rerankers"
+    },
+    {
+      "description": "",
+      "items": [],
+      "title": "RAG Frameworks"
+    },
+    {
+      "description": "",
+      "items": [],
+      "title": "Fine-Tuning & Training"
+    },
+    {
+      "description": "",
+      "items": [],
+      "title": "Evals, Testing & Guardrails"
+    },
+    {
+      "description": "",
+      "items": [],
+      "title": "Observability & LLMOps"
+    },
+    {
+      "description": "",
+      "items": [],
+      "title": "Speech, Vision & Multimodal"
+    },
+    {
+      "description": "",
+      "items": [],
+      "title": "Low-Code / Visual Builders"
+    },
+    {
+      "description": "",
+      "items": [],
+      "title": "Open-Source Alternatives Cheat Sheet"
+    },
+    {
+      "description": "",
+      "items": [],
+      "title": "Contributors"
+    },
+    {
+      "description": "To the extent possible under law, contributors have waived all copyright and related rights to this work.",
+      "items": [],
+      "title": "License"
+    }
+  ],
+  "metadata": {
+    "last_updated": "2026-08-13T04:17:59.861Z",
+    "original_repository": "Sami-Uysal/awesome-open-ai-developer-tools",
+    "original_repository_sha": "63c7ff6f89e19ef907c8a8ae46ed23699757e970",
+    "enhanced_repository": "enhansome/enhansome-open-ai-developer-tools",
+    "enhanced_repository_description": null,
+    "title": "Awesome Open AI Developer Tools with stars"
+  }
+}
