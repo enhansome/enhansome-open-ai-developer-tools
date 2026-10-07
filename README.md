@@ -54,7 +54,7 @@ No affiliate links. No sponsored slots. OSI-licensed only — source-available t
 
 Agents that read, write, and refactor code in your repo.
 
-### [aider](https://github.com/Aider-AI/aider) ⭐ 49,398 | 🐛 1,910 | 🌐 Python | 📅 2026-05-22
+### [aider](https://github.com/Aider-AI/aider) ⭐ 49,411 | 🐛 1,914 | 🌐 Python | 📅 2026-05-22
 
 `Python` · `Apache-2.0` · CLI · 🟡 active
 
@@ -64,7 +64,7 @@ AI pair programming in your terminal. Maps your whole repository, edits files di
 * **Backends:** 100+ models via LiteLLM — Claude, GPT, Gemini, plus local models through Ollama or any OpenAI-compatible endpoint
 * **Edge:** The repo map gives it whole-codebase context without dumping every file into the prompt. Auto-commits mean every AI edit is a revertable checkpoint. Editor-agnostic — works alongside VS Code, Neovim, Emacs, or nothing at all.
 
-### [OpenCode](https://github.com/sst/opencode) ⭐ 212,027 | 🐛 6,256 | 🌐 TypeScript | 📅 2026-10-06
+### [OpenCode](https://github.com/sst/opencode) ⭐ 212,196 | 🐛 6,264 | 🌐 TypeScript | 📅 2026-10-07
 
 `TypeScript` · `MIT` · TUI · 🟢 stable
 
@@ -74,7 +74,7 @@ Terminal-native coding agent with LSP integration — it loads the right languag
 * **Backends:** Anthropic, OpenAI, Google, local models; provider-agnostic by design
 * **Edge:** LSP-grounded suggestions cut hallucinated APIs. Client/server split means you can drive one session from multiple clients.
 
-### [Cline](https://github.com/cline/cline) ⭐ 69,943 | 🐛 1,609 | 🌐 TypeScript | 📅 2026-10-06
+### [Cline](https://github.com/cline/cline) ⭐ 69,989 | 🐛 1,618 | 🌐 TypeScript | 📅 2026-10-07
 
 `TypeScript` · `Apache-2.0` · VS Code extension · 🟢 stable
 
@@ -84,7 +84,7 @@ Autonomous coding agent inside VS Code. Plans, edits files, runs terminal comman
 * **Backends:** Anthropic, OpenAI, Google, AWS Bedrock, Azure, OpenRouter, Ollama, LM Studio
 * **Edge:** Human-in-the-loop by default — every file diff and shell command needs approval. Plan/Act mode separation stops the agent from bulldozing a codebase.
 
-### [Continue](https://github.com/continuedev/continue) ⭐ 36,133 | 🐛 829 | 🌐 TypeScript | 📅 2026-10-05
+### [Continue](https://github.com/continuedev/continue) ⭐ 36,147 | 🐛 834 | 🌐 TypeScript | 📅 2026-10-07
 
 `TypeScript` · `Apache-2.0` · VS Code + JetBrains · 🟢 stable
 
@@ -94,7 +94,7 @@ Build your own AI code assistant — autocomplete, chat, and edit, configured wi
 * **Backends:** Any — local (Ollama, llama.cpp) or hosted
 * **Edge:** Fully configurable context providers (docs, terminal, git diff, codebase). Tab-autocomplete works well with small local models, so you can run genuinely offline.
 
-### [OpenHands](https://github.com/All-Hands-AI/OpenHands) ⭐ 90,119 | 🐛 895 | 🌐 TypeScript | 📅 2026-10-06
+### [OpenHands](https://github.com/All-Hands-AI/OpenHands) ⭐ 90,199 | 🐛 916 | 🌐 TypeScript | 📅 2026-10-07
 
 `Python` · `MIT` · Web + headless · 🟢 stable
 
@@ -104,7 +104,7 @@ Agents that do what a developer does — modify code, run commands, browse the w
 * **Backends:** Anything LiteLLM supports
 * **Edge:** Real sandboxed execution (Docker) rather than a chat that pretends to run things. Headless and CLI modes make it scriptable in CI.
 
-### [SWE-agent](https://github.com/SWE-agent/SWE-agent) ⭐ 20,495 | 🐛 151 | 🌐 Python | 📅 2026-10-06
+### [SWE-agent](https://github.com/SWE-agent/SWE-agent) ⭐ 20,497 | 🐛 152 | 🌐 Python | 📅 2026-10-06
 
 `Python` · `MIT` · CLI · 🟡 active
 
@@ -113,7 +113,7 @@ Research-grade agent that turns a GitHub issue into a pull request.
 * **Replaces:** Devin, issue-to-PR bots
 * **Edge:** The agent-computer interface (ACI) is the point — carefully designed tools beat a bigger model. If you're building your own agent, read this codebase first.
 
-### [Goose](https://github.com/block/goose) ⭐ 55,006 | 🐛 455 | 🌐 Rust | 📅 2026-10-06
+### [Goose](https://github.com/block/goose) ⭐ 55,042 | 🐛 470 | 🌐 Rust | 📅 2026-10-07
 
 `Rust` · `Apache-2.0` · CLI + desktop · 🟢 stable
 
@@ -123,7 +123,17 @@ Extensible autonomous agent from Block, now governed by the Linux Foundation. In
 * **Backends:** Any provider, plus first-class MCP extension support
 * **Edge:** More autonomous than aider — plans and iterates with less hand-holding. Vendor-neutral governance under the Linux Foundation means no rug-pull risk, which matters for tooling you standardize a team on.
 
-### [BitFun](https://github.com/GCWing/BitFun) ⭐ 2,393 | 🐛 85 | 🌐 Rust | 📅 2026-10-05
+### [molt](https://github.com/solvyxtech/molt)
+
+`TypeScript` · `Apache-2.0` · CLI + desktop · 🟡 active
+
+Coding agent that won't say done on a false claim — verification on disk, receipts for accepts and refusals.
+
+* **Replaces:** Cursor agent mode, Claude Code for teams that need a done-bar outside the model
+* **Backends:** OpenAI-compatible endpoints (Ollama, vLLM, etc.) or Anthropic
+* **Edge:** Acceptance lives in `.molt/done.yml` against real files; accepts and refusals both write hash-chained receipts (`molt verify`). Install via `npm i -g @solvyx/molt` / `npx @solvyx/molt`.
+
+### [BitFun](https://github.com/GCWing/BitFun) ⭐ 2,396 | 🐛 81 | 🌐 Rust | 📅 2026-10-07
 
 `Rust + TypeScript` · `MIT` · Desktop + CLI · 🟡 active
 
@@ -133,7 +143,7 @@ Cross-platform coding and desktop agent that plans, edits, tests, and commits in
 * **Backends:** User-configured model providers; model-agnostic by design
 * **Edge:** A Rust runtime binds each conversation to task-specific Mini Apps while retaining filesystem, terminal, Git, browser, desktop, and remote-workspace execution. A self-hostable zero-knowledge relay supports cross-device session control without routing workspace data through a vendor cloud.
 
-### [Orkas](https://github.com/Orkas-AI/Orkas) ⭐ 2,153 | 🐛 12 | 🌐 JavaScript | 📅 2026-10-03
+### [Orkas](https://github.com/Orkas-AI/Orkas) ⭐ 2,154 | 🐛 11 | 🌐 JavaScript | 📅 2026-10-07
 
 `TypeScript` · `MIT` · Desktop · 🟡 active
 
@@ -141,9 +151,19 @@ Local-first desktop AI workforce where a Commander plans work and coordinates bu
 
 * **Replaces:** Cursor agent mode, cloud-hosted agent orchestrators
 * **Backends:** Claude, OpenAI, Gemini, DeepSeek, Kimi, GLM, Qwen, MiniMax, Doubao, and compatible local model endpoints
-* **Edge:** Orkas runs the orchestration layer on the user's machine: conversations, files, agent configuration, and model keys stay local, while the Commander can dispatch Claude Code, Codex, OpenCode, and Cline as local subprocesses alongside built-in agents.
+* **Edge:** Orkas runs the orchestration layer on the user's machine: conversations, files, agent configuration, and model keys stay local, while the Commander can dispatch Claude Code, Codex, OpenCode, OpenClaw, and Hermes as local subprocesses alongside built-in agents.
 
-### [ordewell](https://github.com/ordewell/ordewell) ⭐ 184 | 🐛 29 | 🌐 TypeScript | 📅 2026-10-06
+### [MulmoTerminal](https://github.com/receptron/mulmoterminal) ⭐ 236 | 🐛 7 | 🌐 TypeScript | 📅 2026-10-07
+
+`TypeScript` · `MIT` · Browser / CLI · 🟢 active
+
+Browser grid of live Claude Code and Codex sessions, one real PTY per cell, started with a single `npx` command. Each cell is colour-coded working / needs-you / done, so a session blocked on a permission prompt is distinguishable from one still thinking without opening it.
+
+* **Replaces:** tmux panes plus a notifier script, hand-rolled session dashboards
+* **Backends:** the `claude` and `codex` CLIs you already installed and pay for; Grok and Antigravity also supported
+* **Edge:** session state comes from the agent CLI's own hooks (`PreToolUse` / `Stop` / `Notification`), not from parsing scrollback, so "working" and "waiting on you" are different states rather than both being "output stopped". tmux backs the sessions, so they survive a server restart or a reboot; each cell can hold its own git worktree with commit, push and PR from the grid.
+
+### [ordewell](https://github.com/ordewell/ordewell) ⭐ 187 | 🐛 29 | 🌐 TypeScript | 📅 2026-10-07
 
 `Rust` · `Apache-2.0` · CLI / TUI · 🟡 active
 
@@ -153,7 +173,17 @@ Plan-first CLI/TUI orchestrator that converts a single goal into an ordered, edi
 * **Backends:** Claude Code, Codex, OpenCode
 * **Edge:** Features a read-only planner that generates explicit step-by-step agent plans before execution, with per-task runner, model, and mode assignment.
 
-### [Atomic Agent](https://github.com/AtomicBot-ai/atomic-agent) ⭐ 2,905 | 🐛 35 | 🌐 TypeScript | 📅 2026-10-06
+### [LoopTroop](https://github.com/looptroop-ai/LoopTroop) ⭐ 159 | 🐛 1 | 🌐 TypeScript | 📅 2026-10-07
+
+`TypeScript` · `MIT` · Desktop + CLI · 🟡 active
+
+Local orchestrator that turns complex coding tickets into verified pull requests using multi-model planning councils and isolated git worktrees.
+
+* **Replaces:** Devin, Cursor agent mode, cloud-hosted agent orchestrators
+* **Backends:** Anthropic, OpenAI, Google Gemini, DeepSeek, OpenRouter, and local models via OpenCode
+* **Edge:** LoopTroop runs an LLM council where distinct models draft and vote on task plans before implementation starts. Each task executes inside an isolated git worktree with bounded retry loops, so failed runs roll back without touching the primary checkout. Human approval gates pause execution before irreversible terminal commands or branch updates run.
+
+### [Atomic Agent](https://github.com/AtomicBot-ai/atomic-agent) ⭐ 3,001 | 🐛 36 | 🌐 TypeScript | 📅 2026-10-07
 
 `TypeScript` · `MIT` · CLI + TUI · 🟠 experimental
 
@@ -163,7 +193,7 @@ Local-first coding and desktop agent that runs open-weight models on your machin
 * **Backends:** Bundled `llama.cpp` fork for local quantized models, plus any OpenAI-compatible endpoint, with presets for OpenRouter, LM Studio, and Ollama Cloud
 * **Edge:** Ships its own `llama.cpp` fork and manages the backend process itself, so a quantized local model stays usable across long multi-step runs without a separate server setup. The control loop and all state, including a five-layer memory store, stay on the machine, and 56 built-in tools cover browser, filesystem, git, and vision alongside external MCP servers. The README labels it a developer preview: APIs, commands, and config still move between releases.
 
-### [Kilo Code](https://github.com/Kilo-Org/kilocode) ⭐ 27,509 | 🐛 601 | 🌐 TypeScript | 📅 2026-10-06
+### [Kilo Code](https://github.com/Kilo-Org/kilocode) ⭐ 27,523 | 🐛 590 | 🌐 TypeScript | 📅 2026-10-07
 
 `TypeScript` · `Apache-2.0` · VS Code + JetBrains · 🟢 stable
 
@@ -172,7 +202,7 @@ Open-source IDE agent that merged the best of Roo Code and Cline into one extens
 * **Replaces:** Cursor, Windsurf
 * **Edge:** Orchestrator mode splits a large task into subtasks handled by specialized modes. Absorbs upstream features from both parents, so it moves faster than either did alone.
 
-### [Tabby](https://github.com/TabbyML/tabby) ⭐ 33,901 | 🐛 341 | 🌐 Rust | 📅 2026-06-30
+### [Tabby](https://github.com/TabbyML/tabby) ⭐ 33,906 | 🐛 341 | 🌐 Rust | 📅 2026-06-30
 
 `Rust` · `Apache-2.0` · Self-hosted server · 🟢 stable
 
@@ -189,13 +219,43 @@ Describe a project in natural language; it writes and iterates on the whole code
 
 * **Edge:** Best for greenfield scaffolding rather than surgical edits on an existing repo.
 
+### [Orbi](https://github.com/orbi-build/orbi) ⭐ 195 | 🐛 26 | 🌐 Python | 📅 2026-10-06
+
+`Python` · `AGPL-3.0` · Self-hosted runner + GitHub · 🟢 stable
+
+Works from GitHub issues: label one `ai-ready` and it implements the change in an isolated worktree, opens a PR, and a separate review session checks the diff against the issue's acceptance criteria before anything merges.
+
+* **Replaces:** Devin, GitHub Copilot coding agent
+* **Backends:** Any OpenAI-compatible model, or a Codex subscription
+* **Edge:** Review is a gate, not a suggestion: only the exact head the reviewer approved is merged, and Orbi then cuts the tagged release. Ops tickets (deploys, investigations) post their real commands and output on the issue.
+
+### [Ivy Tendril](https://github.com/Ivy-Interactive/Ivy-Tendril) ⭐ 200 | 🐛 173 | 🌐 C# | 📅 2026-09-15
+
+`TypeScript` · `MIT` · Desktop + Web · 🟡 active
+
+Agentic software factory that manages parallel Git worktrees with programmatic verifications and interactive review loops.
+
+* **Replaces:** Manual git worktree management, multi-agent branch orchestration
+* **Backends:** Anthropic, OpenAI, local models
+* **Edge:** Automates parallel Git worktree isolation with built-in programmatic verification gates and interactive human-in-the-loop review loops before merging.
+
+### [YYLO](https://github.com/yylo-dev/yylo) ⭐ 63 | 🐛 10 | 🌐 Python | 📅 2026-10-03
+
+`Python + TypeScript` · `MIT` · CLI · 🟡 active
+
+Command-line orchestrator for coding agents, repeatable workflows, and receipt-backed repository changes.
+
+* **Replaces:** Manual multi-agent workflow scripting, cloud-hosted agent orchestration
+* **Backends:** Drives Pi and Codex subagents through per-subagent aliases
+* **Edge:** `task start` freezes the protected target SHA and creates a dedicated branch/worktree per task; a merge queue then owns risk-based review — low risk merges with no semantic reviewer,
+
 ***
 
 ## Prompt-to-App Builders
 
 Prompt in, deployed full-stack app out.
 
-### [bolt.diy](https://github.com/stackblitz-labs/bolt.diy) ⭐ 19,930 | 🐛 144 | 🌐 TypeScript | 📅 2026-10-06
+### [bolt.diy](https://github.com/stackblitz-labs/bolt.diy) ⭐ 19,931 | 🐛 59 | 🌐 TypeScript | 📅 2026-10-07
 
 `TypeScript` · `MIT` · 🟢 stable
 
@@ -205,7 +265,7 @@ Official open-source fork of Bolt.new. Prompt, run, edit, and deploy full-stack 
 * **Backends:** OpenAI, Anthropic, Google, Groq, Mistral, DeepSeek, xAI, Ollama, LM Studio, OpenRouter, any OpenAI-compatible endpoint
 * **Edge:** Self-hostable with zero telemetry. Multi-provider switching mid-project means you can start on a cheap model and escalate only where it matters.
 
-### [Open Design](https://github.com/nexu-io/open-design) ⭐ 99,703 | 🐛 1,156 | 🌐 TypeScript | 📅 2026-10-06
+### [Open Design](https://github.com/nexu-io/open-design) ⭐ 99,856 | 🐛 1,165 | 🌐 TypeScript | 📅 2026-10-07
 
 `TypeScript` · `Apache-2.0` · Desktop + web · 🟠 experimental
 
@@ -215,7 +275,7 @@ Turns the coding agent you already have into a design engine — prototypes, lan
 * **Backends:** BYOK through whatever agent is on your PATH — Claude Code, Codex, Cursor, Gemini, OpenCode, Qwen, and 20+ others
 * **Edge:** Ships with a large library of brand-grade design-system packages, and every render reads a `DESIGN.md` brand contract, so output is consistent instead of randomly styled. Local-first: your brand assets never leave the machine.
 
-### [OpenUI](https://github.com/wandb/openui) ⭐ 22,567 | 🐛 88 | 🌐 TypeScript | 📅 2026-09-25
+### [OpenUI](https://github.com/wandb/openui) ⭐ 22,566 | 🐛 88 | 🌐 TypeScript | 📅 2026-09-25
 
 `Python + TypeScript` · `Apache-2.0` · 🟡 active
 
@@ -224,7 +284,7 @@ Describe a UI, watch it render live, convert it to React/Svelte/Vue.
 * **Replaces:** v0.dev
 * **Edge:** Live iteration loop — describe the change, see it immediately. Works with local models via Ollama.
 
-### [Dyad](https://github.com/dyad-sh/dyad) ⭐ 21,660 | 🐛 324 | 🌐 TypeScript | 📅 2026-10-05
+### [Dyad](https://github.com/dyad-sh/dyad) ⭐ 21,743 | 🐛 315 | 🌐 TypeScript | 📅 2026-10-07
 
 `TypeScript` · `Apache-2.0` · Desktop · 🟢 stable
 
@@ -239,7 +299,7 @@ Local, open-source AI app builder. Runs on your machine, bring your own API keys
 
 Long-running agents with memory, goals, and self-direction.
 
-### [OpenClaw](https://github.com/openclaw/openclaw) ⭐ 391,508 | 🐛 9,478 | 🌐 TypeScript | 📅 2026-10-06
+### [OpenClaw](https://github.com/openclaw/openclaw) ⭐ 391,594 | 🐛 9,445 | 🌐 TypeScript | 📅 2026-10-07
 
 `TypeScript` · `MIT` · 🟡 active
 
@@ -249,7 +309,7 @@ Self-hosted personal AI assistant that runs on any OS and reaches you on any pla
 * **Backends:** Any OpenAI-compatible API, Ollama, LocalAI
 * **Edge:** Gateways into Telegram, Discord, Slack, WhatsApp, Signal, email, and CLI, so the agent reaches you where you already are — and can proactively message *you*. Large skill/plugin ecosystem. **Security note:** it holds credentials for your messaging accounts and runs autonomously; sandbox it and read the permission model before pointing it at anything sensitive.
 
-### [Hivekeep](https://github.com/MarlBurroW/hivekeep) ⭐ 68 | 🐛 26 | 🌐 TypeScript | 📅 2026-10-06
+### [Hivekeep](https://github.com/MarlBurroW/hivekeep) ⭐ 68 | 🐛 26 | 🌐 TypeScript | 📅 2026-10-07
 
 `TypeScript` · `MIT` · 🟡 active
 
@@ -259,7 +319,17 @@ Self-hosted platform to run a *team* of specialized AI agents that collaborate, 
 * **Backends:** Any OpenAI-compatible API, Ollama
 * **Edge:** Multiple agents delegate to each other and share memory across months; a built-in web UI plus Telegram, Slack, Discord, and Matrix channels. Ships as a single container (Bun + SQLite), so the whole platform runs on modest hardware.
 
-### [Hermes Agent](https://github.com/NousResearch/hermes-agent) ⭐ 251,670 | 🐛 47,762 | 🌐 Python | 📅 2026-10-06
+### [Tale](https://github.com/tale-project/tale) ⭐ 32 | 🐛 242 | 🌐 TypeScript | 📅 2026-10-07
+
+`TypeScript` · `MIT` · Web app · 🟡 active
+
+Self-hostable project workspace for people and AI agents to delegate tasks and review reports and delivered files together.
+
+* **Replaces:** Hosted agent workspaces for team task delegation and review
+* **Backends:** Supported coding runtimes including Claude Code, Codex, and OpenCode, with separately configured compatible provider credentials
+* **Edge:** Each project agent reuses a persistent sandbox workspace across tasks, while task attachments and collected deliverables stay attached to the work. Task context and acceptance criteria guide execution, and completed work goes to a designated reviewer.
+
+### [Hermes Agent](https://github.com/NousResearch/hermes-agent) ⭐ 251,915 | 🐛 47,710 | 🌐 Python | 📅 2026-10-07
 
 `Python` · `MIT` · 🟡 active
 
@@ -268,7 +338,7 @@ Nous Research's self-improving agent — persistent memory, reusable skills, cro
 * **Replaces:** OpenAI Operator, Claude Desktop
 * **Edge:** Closed learning loop: it creates skills from experience, refines them in use, and persists memory and session history in SQLite across restarts. Runs on a cheap VPS or serverless with no idle cost.
 
-### [DeerFlow](https://github.com/bytedance/deer-flow) ⭐ 83,440 | 🐛 891 | 🌐 Python | 📅 2026-10-06
+### [DeerFlow](https://github.com/bytedance/deer-flow) ⭐ 83,472 | 🐛 922 | 🌐 Python | 📅 2026-10-07
 
 `Python` · `MIT` · 🟡 active
 
@@ -284,7 +354,7 @@ Autonomous agent with AGI-inspired cognitive subsystems — goals, working/episo
 
 * **Edge:** Ollama-first with cloud fallback and a low-VRAM mode, so it genuinely runs on your own hardware. Memory decay and consolidation plus a watchdog/hot-reload supervisor make 24/7 operation realistic rather than aspirational.
 
-### [AutoGPT](https://github.com/Significant-Gravitas/AutoGPT) ⭐ 187,667 | 🐛 613 | 🌐 Python | 📅 2026-10-06
+### [AutoGPT](https://github.com/Significant-Gravitas/AutoGPT) ⭐ 187,685 | 🐛 607 | 🌐 Python | 📅 2026-10-07
 
 `Python + TypeScript` · MIT (classic agent) / Polyform Shield (platform) · 🟢 stable
 
@@ -292,7 +362,7 @@ The project that started the autonomous-agent wave, now a low-code platform for 
 
 * **Edge:** Visual block-based builder plus a library of pre-built agents. Note the license split — the classic agent is MIT, the newer platform is source-available, not OSI.
 
-### [Letta](https://github.com/letta-ai/letta) ⭐ 25,050 | 🐛 0 | 📅 2026-09-10 (formerly MemGPT)
+### [Letta](https://github.com/letta-ai/letta) ⭐ 25,070 | 🐛 0 | 📅 2026-09-10 (formerly MemGPT)
 
 `Python` · `Apache-2.0` · 🟢 stable
 
@@ -301,7 +371,7 @@ Stateful agents with real long-term memory — the agent manages its own context
 * **Replaces:** OpenAI Assistants API
 * **Edge:** Memory is a first-class primitive backed by a database, not a vector-search bolt-on. Agents persist across sessions and are portable between models.
 
-### [Mem0](https://github.com/mem0ai/mem0) ⭐ 66,673 | 🐛 791 | 🌐 Python | 📅 2026-10-06
+### [Mem0](https://github.com/mem0ai/mem0) ⭐ 66,773 | 🐛 796 | 🌐 Python | 📅 2026-10-07
 
 `Python + TypeScript` · `Apache-2.0` · 🟢 stable
 
@@ -309,7 +379,7 @@ Memory layer you drop into any agent — extracts, stores, and retrieves facts a
 
 * **Edge:** Framework-agnostic. Hybrid vector + graph store beats naively stuffing the chat log into a vector DB.
 
-### [kgai](https://github.com/kgaidev/kgai) ⭐ 4 | 🐛 0 | 🌐 Go | 📅 2026-10-05
+### [kgai](https://github.com/kgaidev/kgai) ⭐ 5 | 🐛 0 | 🌐 Go | 📅 2026-10-05
 
 `Go` · `MIT` · Claude Code plugin + CLI · 🟡 active
 
@@ -317,7 +387,7 @@ Local-first shared decision memory for engineering teams using Claude Code. An a
 
 * **Edge:** The log is append-only and decisions are superseded, never edited or deleted, so a rejected approach stays in history with the reason it died. Teams sync the store over an S3 bucket they own, with no central server and no daemon. Capture rules live in a committed, per-repo config you approve before it runs.
 
-### [Mnemoverse](https://github.com/mnemoverse/mcp-memory-server) ⭐ 26 | 🐛 11 | 🌐 TypeScript | 📅 2026-10-06
+### [Mnemoverse](https://github.com/mnemoverse/mcp-memory-server) ⭐ 26 | 🐛 12 | 🌐 TypeScript | 📅 2026-10-07
 
 `TypeScript + Python` · `MIT` (client) · 🟢 stable
 
@@ -325,7 +395,7 @@ Hosted memory reached over MCP: one key gives Claude Code, Cursor, VS Code and C
 
 * **Edge:** Recall ranking moves with outcomes, not similarity alone. A memory that helped is promoted, one that misled is demoted, so ranking is a function of consequences.
 
-### [Khoj](https://github.com/khoj-ai/khoj) ⭐ 37,577 | 🐛 164 | 🌐 Python | 📅 2026-08-02
+### [Khoj](https://github.com/khoj-ai/khoj) ⭐ 37,592 | 🐛 164 | 🌐 Python | 📅 2026-08-02
 
 `Python` · `AGPL-3.0` · 🟢 stable
 
@@ -334,19 +404,48 @@ Self-hosted personal AI that searches your notes, documents, and the web; reacha
 * **Replaces:** ChatGPT with memory, Notion AI
 * **Edge:** Indexes *your* corpus locally. Runs fully offline with local models.
 
+### [5dive](https://github.com/5dive-ai/5dive) ⭐ 66 | 🐛 12 | 🌐 Shell | 📅 2026-10-07
+
+`Shell` · `MIT` · Self-hosted / CLI · 🟡 active
+
+Runs a team of AI agents on a server you own; you message them like coworkers on Telegram or Discord.
+
+* **Replaces:** Devin, Lindy
+* **Backends:** Claude Code, Codex and other official agent CLIs with your own subscription or API key, any model through OpenRouter, or a local server (vLLM, llama.cpp, an Ollama shim)
+* **Edge:** No framework or broker: the orchestrator is bash, and each agent is a Linux user running a systemd service with SQLite for state and journald for logs, so a single-agent setup fits on a 1 GB VM. Agents hand each other work through an org chart and a shared backlog.
+
+### [aiFetchly](https://github.com/robertzengcn/aiFetchly) ⭐ 1 | 🐛 52 | 🌐 TypeScript | 📅 2026-10-07
+
+`TypeScript` · `Apache-2.0` · Desktop app · 🟡 active
+
+Open-source desktop AI agent for business automation — lead generation, knowledge library RAG, outreach, and scheduled workflows. Runs on Windows, macOS, Linux.
+
+* **Replaces:** Cloud-hosted business automation and lead-generation agents
+* **Edge:** Local-first: SQLite + sqlite-vec storage, permission-gated tools, skills/plugins/MCP servers. Cron scheduling, subagents, Puppeteer browser automation for lead-gen/outreach loops.
+
 ***
+
+### [OpenAmer](https://github.com/openamer/openamer) ⭐ 5 | 🐛 67 | 🌐 Python | 📅 2026-10-07
+
+`Python` · `Apache-2.0` · 🟡 active
+
+Windows-native agent runtime that operates the real desktop (filesystem, terminal, GUI, browser over the Chrome DevTools Protocol) and runs entirely locally, with persistent memory, reusable skills, and a self-improvement loop.
+
+* **Replaces:** Operator-style cloud computer-use, Claude Desktop
+* **Backends:** Any OpenAI-compatible API, Ollama, local models
+* **Edge:** Cognition tools (`think`/`learn`/`remember`/`trigger`/`heartbeat`) run in-process rather than as subprocess hops; a single 10-subsystem heartbeat replaces a pile of individual cron jobs; instances route work to each other peer-to-peer over an A2A mesh, with every action recorded in an outcome ledger so claims are checkable.
 
 ## Agent Sandboxes & Browser Control
 
 Where agent-generated code actually runs, and how agents touch the web.
 
-### [E2B](https://github.com/e2b-dev/E2B) ⭐ 14,201 | 🐛 88 | 🌐 Python | 📅 2026-10-06
+### [E2B](https://github.com/e2b-dev/E2B) ⭐ 14,218 | 🐛 90 | 🌐 Python | 📅 2026-10-07
 
 `TypeScript + Go` · `Apache-2.0` · SDK + self-hostable infra · 🟢 stable
 
 Secure cloud sandboxes for running AI-generated code, built on Firecracker microVMs.
 
-* **Edge:** microVM isolation gives each sandbox its own kernel — a genuine security boundary, not just a container namespace. That distinction matters the moment you execute code a model wrote. Python and JS SDKs, plus [e2b-dev/infra](https://github.com/e2b-dev/infra) ⭐ 1,680 | 🐛 210 | 🌐 Go | 📅 2026-10-06 if you need to run the whole platform yourself.
+* **Edge:** microVM isolation gives each sandbox its own kernel — a genuine security boundary, not just a container namespace. That distinction matters the moment you execute code a model wrote. Python and JS SDKs, plus [e2b-dev/infra](https://github.com/e2b-dev/infra) ⭐ 1,683 | 🐛 211 | 🌐 Go | 📅 2026-10-07 if you need to run the whole platform yourself.
 * **Replaces:** proprietary code-interpreter backends
 
 ### [Daytona](https://github.com/daytonaio/daytona) ⚠️ Archived
@@ -358,7 +457,7 @@ Sandbox runtime for AI agents with fast warm-pool starts and filesystems that pe
 * **Replaces:** E2B (when you need persistence over isolation strength)
 * **Edge:** sandboxes can pause, resume, and outlive a single session, which is what long-horizon agents actually need. Container-based rather than microVM, so treat the isolation as weaker than E2B's — fine for your own code, think twice for genuinely untrusted input.
 
-### [browser-use](https://github.com/browser-use/browser-use) ⭐ 117,272 | 🐛 539 | 🌐 Python | 📅 2026-10-06
+### [browser-use](https://github.com/browser-use/browser-use) ⭐ 117,381 | 🐛 543 | 🌐 Python | 📅 2026-10-07
 
 `Python` · `MIT` · Library · 🟡 active
 
@@ -367,7 +466,7 @@ Connects an LLM to a real browser so it can navigate, fill forms, and extract da
 * **Replaces:** Stagehand, MultiOn
 * **Edge:** the most widely used open browser agent, with multi-tab handling and vision fallback when the DOM isn't enough. **Known weakness:** non-deterministic — the same goal takes different paths on different runs, which makes failures hard to reproduce, and vision calls on complex pages get expensive. Budget for retries and cap your spend.
 
-### [Skyvern](https://github.com/Skyvern-AI/skyvern) ⭐ 23,143 | 🐛 275 | 🌐 Python | 📅 2026-10-06
+### [Skyvern](https://github.com/Skyvern-AI/skyvern) ⭐ 23,151 | 🐛 274 | 🌐 Python | 📅 2026-10-07
 
 `Python` · `AGPL-3.0` · Library + server · 🟢 stable
 
@@ -376,7 +475,7 @@ Browser automation driven by computer vision instead of DOM selectors.
 * **Replaces:** Stagehand, brittle Playwright scraping suites
 * **Edge:** because it navigates visually, a site redesign doesn't break your selectors — the usual reason scraping pipelines rot. **Check the license:** AGPL-3.0, and the anti-bot pieces are held back for the paid cloud. That combination rules it out for some commercial use.
 
-### [Open Interpreter](https://github.com/openinterpreter/openinterpreter) ⭐ 68,518 | 🐛 12 | 🌐 Rust | 📅 2026-10-06
+### [Open Interpreter](https://github.com/openinterpreter/openinterpreter) ⭐ 68,519 | 🐛 11 | 🌐 Rust | 📅 2026-10-07
 
 `Python` · `MIT` · CLI + Desktop · 🟢 stable
 
@@ -386,7 +485,7 @@ Lets Language Models run code locally on your computer to edit videos, analyze d
 * **Backends:** Local models (Ollama, LM Studio) or hosted APIs (OpenAI, Anthropic)
 * **Edge:** Runs directly in your local terminal environment with full access to system utilities, internet, and python packages without cloud execution limits.
 
-### [Superagent](https://github.com/pungme/superagent-desktop) ⭐ 29 | 🐛 0 | 🌐 TypeScript | 📅 2026-10-06
+### [Superagent](https://github.com/pungme/superagent-desktop) ⭐ 29 | 🐛 0 | 🌐 TypeScript | 📅 2026-10-07
 
 `TypeScript + Swift` · `MIT` · Desktop app · 🟡 active
 
@@ -402,7 +501,7 @@ macOS desktop app that gives Claude Code and Codex a real browser to drive, an i
 
 Libraries for building multi-agent and tool-using systems.
 
-### [LangGraph](https://github.com/langchain-ai/langgraph) ⭐ 42,789 | 🐛 826 | 🌐 Python | 📅 2026-10-06
+### [LangGraph](https://github.com/langchain-ai/langgraph) ⭐ 42,840 | 🐛 794 | 🌐 Python | 📅 2026-10-07
 
 `Python + JS` · `MIT` · 🟢 stable
 
@@ -410,7 +509,7 @@ Build agents as stateful graphs — nodes, edges, and explicit control flow, wit
 
 * **Edge:** Durable execution: an agent can pause for hours awaiting human approval and resume with full state. The right choice when you need a *reliable* agent, not a demo.
 
-### [CrewAI](https://github.com/crewAIInc/crewAI) ⭐ 59,398 | 🐛 571 | 🌐 Python | 📅 2026-10-06
+### [CrewAI](https://github.com/crewAIInc/crewAI) ⭐ 59,424 | 🐛 575 | 🌐 Python | 📅 2026-10-07
 
 `Python` · `MIT` · 🟢 stable
 
@@ -419,7 +518,7 @@ Role-playing autonomous agents that collaborate — a "crew" with defined roles,
 * **Replaces:** AutoGen, OpenAI Swarm
 * **Edge:** Independent of LangChain, lean runtime. The role/task abstraction is the most intuitive on-ramp to multi-agent design. Flows give you event-driven control when crews are too loose.
 
-### [AutoGen](https://github.com/microsoft/autogen) ⭐ 61,271 | 🐛 1,101 | 🌐 Python | 📅 2026-04-15
+### [AutoGen](https://github.com/microsoft/autogen) ⭐ 61,282 | 🐛 1,104 | 🌐 Python | 📅 2026-04-15
 
 `Python + .NET` · `MIT` · 🟢 stable
 
@@ -427,7 +526,7 @@ Microsoft's framework for multi-agent conversation — agents talk to each other
 
 * **Edge:** Async event-driven core with a distributed runtime and cross-language support. AutoGen Studio gives a no-code prototyping UI.
 
-### [smolagents](https://github.com/huggingface/smolagents) ⭐ 29,707 | 🐛 872 | 🌐 Python | 📅 2026-10-06
+### [smolagents](https://github.com/huggingface/smolagents) ⭐ 29,722 | 🐛 876 | 🌐 Python | 📅 2026-10-06
 
 `Python` · `Apache-2.0` · 🟢 stable
 
@@ -435,7 +534,7 @@ Hugging Face's minimal agent library — the core logic is about a thousand line
 
 * **Edge:** The fastest path to a working single-agent loop. Code agents write Python actions instead of emitting JSON tool calls, which is measurably more reliable for multi-step tasks. Read it end-to-end in an afternoon.
 
-### [Google ADK](https://github.com/google/adk-python) ⭐ 21,723 | 🐛 441 | 🌐 Python | 📅 2026-10-06
+### [Google ADK](https://github.com/google/adk-python) ⭐ 21,736 | 🐛 430 | 🌐 Python | 📅 2026-10-07
 
 `Python + Java` · `Apache-2.0` · 🟢 stable
 
@@ -443,7 +542,7 @@ Code-first toolkit for building, evaluating, and deploying multi-agent systems.
 
 * **Edge:** Model-agnostic and deployment-agnostic despite the Google name. Built-in evaluation and a local dev UI close the "how do I know my agent got worse?" gap that most frameworks ignore.
 
-### [Pydantic AI](https://github.com/pydantic/pydantic-ai) ⭐ 20,451 | 🐛 1,386 | 🌐 Python | 📅 2026-10-06
+### [Pydantic AI](https://github.com/pydantic/pydantic-ai) ⭐ 20,472 | 🐛 1,410 | 🌐 Python | 📅 2026-10-07
 
 `Python` · `MIT` · 🟢 stable
 
@@ -451,7 +550,7 @@ Agent framework from the Pydantic team — type-safe, structured outputs, depend
 
 * **Edge:** If you already trust Pydantic for validation, this brings the same rigor to LLM I/O. Feels like FastAPI for agents.
 
-### [DSPy](https://github.com/stanfordnlp/dspy) ⭐ 38,523 | 🐛 781 | 🌐 Python | 📅 2026-10-05
+### [DSPy](https://github.com/stanfordnlp/dspy) ⭐ 38,546 | 🐛 781 | 🌐 Python | 📅 2026-10-07
 
 `Python` · `MIT` · 🟢 stable
 
@@ -459,7 +558,7 @@ Program LLMs instead of prompting them — declare modules and let optimizers co
 
 * **Edge:** Replaces manual prompt-tweaking with systematic optimization against a metric. Swap the model, recompile, keep the quality.
 
-### [LiteLLM](https://github.com/BerriAI/litellm) ⭐ 60,240 | 🐛 5,236 | 🌐 Python | 📅 2026-10-06
+### [LiteLLM](https://github.com/BerriAI/litellm) ⭐ 60,299 | 🐛 5,282 | 🌐 Python | 📅 2026-10-07
 
 `Python` · `MIT` · 🟢 stable
 
@@ -468,7 +567,7 @@ One OpenAI-compatible interface for 100+ LLM providers, plus a proxy with keys, 
 * **Replaces:** OpenRouter (hosted)
 * **Edge:** The single most useful piece of plumbing in the stack. Provider outage → automatic fallback. Per-team budgets and spend tracking come free.
 
-### [Haystack](https://github.com/deepset-ai/haystack) ⭐ 26,684 | 🐛 160 | 🌐 Python | 📅 2026-10-06
+### [Haystack](https://github.com/deepset-ai/haystack) ⭐ 26,691 | 🐛 155 | 🌐 Python | 📅 2026-10-07
 
 `Python` · `Apache-2.0` · 🟢 stable
 
@@ -482,7 +581,7 @@ Production-oriented framework for composable RAG and agent pipelines.
 
 Tools for publishing, versioning, discovering, and installing reusable instructions and configuration across AI coding assistants.
 
-### [AIPM](https://github.com/abhisri2090/aipm) ⭐ 1 | 🐛 0 | 🌐 TypeScript | 📅 2026-10-06
+### [AIPM](https://github.com/abhisri2090/aipm) ⭐ 1 | 🐛 11 | 🌐 TypeScript | 📅 2026-10-07
 
 `TypeScript` · `Apache-2.0` · CLI + registry · 🟡 active
 
@@ -496,7 +595,7 @@ Package manager and public registry for reusable AI skills, prompts, rules, MCP 
 
 The emerging standard for connecting models to tools and data.
 
-### [MCP Specification](https://github.com/modelcontextprotocol/modelcontextprotocol) ⭐ 9,396 | 🐛 118 | 🌐 TypeScript | 📅 2026-10-06
+### [MCP Specification](https://github.com/modelcontextprotocol/modelcontextprotocol) ⭐ 9,405 | 🐛 118 | 🌐 TypeScript | 📅 2026-10-07
 
 `MIT` · 🟢 stable
 
@@ -504,7 +603,7 @@ The protocol itself — open standard for exposing tools, resources, and prompts
 
 * **Edge:** Write an integration once; every MCP-capable client (Claude Code, OpenCode, Cline, Continue, and more) can use it.
 
-### [MCP Servers](https://github.com/modelcontextprotocol/servers) ⭐ 91,047 | 🐛 491 | 🌐 TypeScript | 📅 2026-10-05
+### [MCP Servers](https://github.com/modelcontextprotocol/servers) ⭐ 91,066 | 🐛 496 | 🌐 TypeScript | 📅 2026-10-07
 
 `MIT` · 🟡 active
 
@@ -512,7 +611,7 @@ Reference implementations — filesystem, git, fetch, memory, and dozens of comm
 
 * **Edge:** The fastest way to learn the protocol is to read a 200-line server that already works.
 
-### [Mac Developer Bridge](https://github.com/alexanderradahl/mac-developer-bridge) ⭐ 51 | 🐛 7 | 🌐 JavaScript | 📅 2026-09-03
+### [Mac Developer Bridge](https://github.com/alexanderradahl/mac-developer-bridge) ⭐ 51 | 🐛 7 | 🌐 JavaScript | 📅 2026-10-07
 
 `JavaScript` · `MIT` · macOS / MCP · 🟠 experimental
 
@@ -520,7 +619,15 @@ Local MCP bridge that lets an existing ChatGPT conversation operate the Mac wher
 
 * **Edge:** ChatGPT stays the reasoning layer and the bridge makes no model calls. Unlike a narrow filesystem or shell MCP, it is deliberately built for developer-machine parity and real interactive terminals. **Security tradeoff:** it is intentionally not sandboxed and runs with the macOS user's effective permissions, so it is only appropriate when that level of machine access is explicitly wanted.
 
-### [MCP Inspector](https://github.com/modelcontextprotocol/inspector) ⭐ 11,030 | 🐛 44 | 🌐 TypeScript | 📅 2026-10-06
+### [Screenpipe](https://github.com/screenpipe/screenpipe) ⭐ 21,853 | 🐛 38 | 🌐 Rust | 📅 2026-10-07
+
+`Rust + TypeScript` · `Screenpipe Commercial License` (source-available, not OSI) · Desktop + MCP + local API · 🟡 active
+
+Captures screen text and audio history so agents can retrieve context from past debugging sessions, documentation, and meetings.
+
+* **Edge:** Searches captured activity across apps with time and app filters, rather than relying on manually pasted context. MCP requires a running Screenpipe recorder and local API key; desktop Settings > Connections configures the connection. Raw history stays local by default, while configured cloud AI, transcription, sync, and integrations can send context off-device.
+
+### [MCP Inspector](https://github.com/modelcontextprotocol/inspector) ⭐ 11,036 | 🐛 50 | 🌐 TypeScript | 📅 2026-10-07
 
 `TypeScript` · `MIT` · 🟡 active
 
@@ -528,7 +635,7 @@ Official developer tool for testing and debugging MCP servers.
 
 * **Edge:** shows you the actual protocol traffic — tool calls, resources, errors — instead of leaving you guessing why a client won't load your server. First thing to reach for when an MCP integration silently does nothing.
 
-### [FastMCP](https://github.com/jlowin/fastmcp) ⭐ 27,988 | 🐛 443 | 🌐 Python | 📅 2026-10-06
+### [FastMCP](https://github.com/jlowin/fastmcp) ⭐ 27,997 | 🐛 455 | 🌐 Python | 📅 2026-10-07
 
 `Python` · `Apache-2.0` · 🟡 active
 
@@ -536,7 +643,7 @@ The ergonomic way to build MCP servers and clients — decorator-based, like Fas
 
 * **Edge:** A working server in \~10 lines. Handles auth, deployment, proxying, and server composition.
 
-### [octocode](https://github.com/Muvon/octocode) ⭐ 481 | 🐛 5 | 🌐 Rust | 📅 2026-10-06
+### [octocode](https://github.com/Muvon/octocode) ⭐ 481 | 🐛 5 | 🌐 Rust | 📅 2026-10-07
 
 `Rust` · `Apache-2.0` · 🟠 experimental
 
@@ -546,13 +653,32 @@ Local semantic code index with an MCP server on top — search and navigate a co
 * **Backends:** local embeddings via fastembed, or a hosted provider if you'd rather offload it
 * **Edge:** runs entirely locally, and embeddings are your choice. **Known weakness:** first index on a large repo is slow, and semantic search is genuinely bad at structural questions — "find every implementation of this trait" wants a structural index, not embeddings, so you need separate structural tools and have to know which kind of question you're asking before you search. Early-stage; treat it accordingly.
 
+### [ContextStream](https://github.com/contextstream/mcp-server) ⭐ 44 | 🐛 3 | 🌐 Rust | 📅 2026-10-07
+
+`Rust` · `MIT` · MCP · 🟡 active
+
+Shared project context and semantic code search over MCP for AI coding agents.
+
+* **Replaces:** single-editor indexes and lost per-session context
+* **Backends:** local OSS server (`@contextstream/mcp-server`) or hosted remote MCP (`https://mcp.contextstream.io/mcp`)
+* **Edge:** shared project context across MCP clients not locked to one editor
+
+### [mcpdoctor](https://github.com/xka0085-byte/mcp-doctor) ⭐ 0 | 🐛 0 | 🌐 JavaScript | 📅 2026-10-07
+
+`JavaScript` · `MIT` · CLI · 🟠 experimental
+
+Read-only preflight inspector and linter for MCP tool schemas and x402 HTTP payment-required endpoints with GitHub Actions CI support.
+
+* **Replaces:** Manual curl inspection, ad-hoc JSON schema validation for MCP endpoints
+* **Edge:** Runs zero-dependency preflight checks without credentials, verifying discovery manifests (`/.well-known/mcp/server.json`) and SHA-256 body digests before clients or payment buyers connect.
+
 ***
 
 ## Local Inference Engines
 
 Run models on your own hardware.
 
-### [Ollama](https://github.com/ollama/ollama) ⭐ 182,384 | 🐛 4,184 | 🌐 Go | 📅 2026-10-06
+### [Ollama](https://github.com/ollama/ollama) ⭐ 182,490 | 🐛 4,201 | 🌐 Go | 📅 2026-10-07
 
 `Go` · `MIT` · 🟢 stable
 
@@ -561,7 +687,7 @@ Download and run open models with one command. The default entry point to local 
 * **Replaces:** OpenAI API (for local workloads)
 * **Edge:** `ollama run <model>` and you're done — it handles fetching, quantization, GPU offload, and serving an OpenAI-compatible API. The largest model library and the widest tool support of any local runtime.
 
-### [llama.cpp](https://github.com/ggml-org/llama.cpp) ⭐ 130,498 | 🐛 2,500 | 🌐 C++ | 📅 2026-10-06
+### [llama.cpp](https://github.com/ggml-org/llama.cpp) ⭐ 130,605 | 🐛 2,496 | 🌐 C++ | 📅 2026-10-07
 
 `C/C++` · `MIT` · 🟢 stable
 
@@ -569,7 +695,7 @@ The inference engine most local tooling is built on. Runs LLMs on CPU, CUDA, Met
 
 * **Edge:** Extreme portability — a laptop, a Raspberry Pi, a Mac Studio, a server farm. GGUF quantization is the reason a large model fits on consumer hardware.
 
-### [Jan](https://github.com/menloresearch/jan) ⭐ 44,826 | 🐛 541 | 🌐 Rust | 📅 2026-10-06
+### [Jan](https://github.com/menloresearch/jan) ⭐ 44,842 | 🐛 540 | 🌐 Rust | 📅 2026-10-07
 
 `TypeScript` · `AGPL-3.0` · Desktop · 🟢 stable
 
@@ -578,7 +704,7 @@ Offline ChatGPT alternative that runs entirely on your machine.
 * **Replaces:** ChatGPT desktop, LM Studio (which is only partially open)
 * **Edge:** Fully open desktop UX with local-first data storage, plus an optional OpenAI-compatible local server.
 
-### [MLC LLM](https://github.com/mlc-ai/mlc-llm) ⭐ 23,210 | 🐛 350 | 🌐 Python | 📅 2026-10-04
+### [MLC LLM](https://github.com/mlc-ai/mlc-llm) ⭐ 23,210 | 🐛 349 | 🌐 Python | 📅 2026-10-06
 
 `Python + C++` · `Apache-2.0` · 🟢 stable
 
@@ -587,7 +713,7 @@ Universal LLM deployment engine — native GPU acceleration on iOS, Android, des
 * **Replaces:** Ollama (on mobile), cloud inference for on-device apps
 * **Edge:** the only serious path to running an LLM on a phone's GPU. **Known weakness:** model support is limited to what's been compiled for the target, and when compilation or inference fails the errors are opaque.
 
-### [WebLLM](https://github.com/mlc-ai/web-llm) ⭐ 19,230 | 🐛 148 | 🌐 TypeScript | 📅 2026-10-03
+### [WebLLM](https://github.com/mlc-ai/web-llm) ⭐ 19,240 | 🐛 149 | 🌐 TypeScript | 📅 2026-10-03
 
 `TypeScript` · `Apache-2.0` · 🟢 stable
 
@@ -595,7 +721,7 @@ LLM inference entirely in the browser via WebGPU.
 
 * **Edge:** no server, no API key, no data leaving the tab — which makes a whole class of privacy-sensitive apps possible. **Known weakness:** requires WebGPU, so Safari and Firefox support is the limiting factor, and out-of-memory device-lost errors are common on modest GPUs.
 
-### [llamafile](https://github.com/Mozilla-Ocho/llamafile) ⭐ 26,183 | 🐛 215 | 🌐 C++ | 📅 2026-10-06
+### [llamafile](https://github.com/Mozilla-Ocho/llamafile) ⭐ 26,193 | 🐛 215 | 🌐 C++ | 📅 2026-10-07
 
 `C/C++` · `Apache-2.0` · 🟢 stable
 
@@ -603,7 +729,7 @@ Distribute an entire LLM as one executable file that runs on multiple OSes witho
 
 * **Edge:** Unbeatable for shipping a model to a non-technical user. One file. Double-click. Done.
 
-### [Rapid-MLX](https://github.com/raullenchai/Rapid-MLX) ⭐ 3,915 | 🐛 48 | 🌐 Python | 📅 2026-10-06
+### [Rapid-MLX](https://github.com/raullenchai/Rapid-MLX) ⭐ 3,929 | 🐛 33 | 🌐 Python | 📅 2026-10-07
 
 `Python` · `Apache-2.0` · 🟡 active
 
@@ -618,7 +744,7 @@ OpenAI-compatible inference server built specifically for Apple Silicon, on Appl
 
 Serving models at scale.
 
-### [vLLM](https://github.com/vllm-project/vllm) ⭐ 93,286 | 🐛 8,510 | 🌐 Python | 📅 2026-10-06
+### [vLLM](https://github.com/vllm-project/vllm) ⭐ 93,341 | 🐛 8,556 | 🌐 Python | 📅 2026-10-07
 
 `Python + CUDA` · `Apache-2.0` · 🟢 stable
 
@@ -627,7 +753,7 @@ High-throughput, memory-efficient inference and serving engine — the de facto 
 * **Replaces:** OpenAI API, Together AI
 * **Edge:** PagedAttention plus continuous batching gives order-of-magnitude throughput gains over naive serving. Tensor/pipeline parallelism scales across GPUs; the OpenAI-compatible API means clients need no changes.
 
-### [SGLang](https://github.com/sgl-project/sglang) ⭐ 36,820 | 🐛 5,558 | 🌐 Python | 📅 2026-10-06
+### [SGLang](https://github.com/sgl-project/sglang) ⭐ 36,839 | 🐛 5,608 | 🌐 Python | 📅 2026-10-07
 
 `Python` · `Apache-2.0` · 🟢 stable
 
@@ -635,7 +761,7 @@ Fast serving framework with RadixAttention prefix caching and a structured gener
 
 * **Edge:** Wins on workloads with heavy shared prefixes (agents, few-shot, multi-turn) where prefix-cache reuse dominates. Excellent constrained-decoding support.
 
-### [LocalAI](https://github.com/mudler/LocalAI) ⭐ 49,414 | 🐛 173 | 🌐 Go | 📅 2026-10-06
+### [LocalAI](https://github.com/mudler/LocalAI) ⭐ 49,423 | 🐛 176 | 🌐 Go | 📅 2026-10-07
 
 `Go` · `MIT` · 🟢 stable
 
@@ -652,7 +778,7 @@ Hugging Face's production serving stack — the engine behind their inference en
 
 * **Edge:** Battle-tested Rust web server, token streaming, and tight integration with the HF ecosystem.
 
-### [Ray](https://github.com/ray-project/ray) ⭐ 43,975 | 🐛 3,576 | 🌐 Python | 📅 2026-10-06
+### [Ray](https://github.com/ray-project/ray) ⭐ 43,979 | 🐛 3,565 | 🌐 Python | 📅 2026-10-07
 
 `Python` · `Apache-2.0` · 🟢 stable
 
@@ -670,7 +796,7 @@ Terminal-first AI gateway that puts provider routing, governed agent and knowled
 * **Backends:** deterministic local fake provider by default; configurable adapters for NVIDIA and OpenAI-compatible upstream providers
 * **Edge:** A fresh clone can prove the complete chat and MCP paths without credentials, while the CLI refuses to send when a real provider may be active unless the operator supplies `--allow-real-provider` for that command. Public-clone and container smoke checks keep the credential-free path under CI.
 
-### [Bifrost](https://github.com/maximhq/bifrost) ⭐ 8,585 | 🐛 1,184 | 🌐 Go | 📅 2026-10-06
+### [Bifrost](https://github.com/maximhq/bifrost) ⭐ 8,610 | 🐛 1,185 | 🌐 Go | 📅 2026-10-07
 
 `Go` · `Apache-2.0` · `Self-hosted gateway` · 🟢 stable
 
@@ -683,7 +809,7 @@ OpenAI-compatible AI gateway for routing requests across multiple model provider
 
 ## Chat UIs & Frontends
 
-### [Open WebUI](https://github.com/open-webui/open-webui) ⭐ 154,092 | 🐛 270 | 🌐 Python | 📅 2026-10-06
+### [Open WebUI](https://github.com/open-webui/open-webui) ⭐ 154,159 | 🐛 283 | 🌐 Python | 📅 2026-10-07
 
 `Python + Svelte` · `BSD-3-Clause` (with branding clause) · 🟢 stable
 
@@ -692,7 +818,7 @@ Feature-rich, self-hosted AI interface — the default UI for Ollama and OpenAI-
 * **Replaces:** ChatGPT Plus, Claude Pro
 * **Edge:** Multi-user with RBAC, built-in RAG over uploaded documents, web search, image generation, voice, and a Python function/pipeline plugin system. Runs fully offline.
 
-### [LibreChat](https://github.com/danny-avila/LibreChat) ⭐ 45,340 | 🐛 850 | 🌐 TypeScript | 📅 2026-10-06
+### [LibreChat](https://github.com/danny-avila/LibreChat) ⭐ 45,375 | 🐛 854 | 🌐 TypeScript | 📅 2026-10-07
 
 `TypeScript` · `MIT` · 🟢 stable
 
@@ -701,7 +827,7 @@ Every AI provider in one polished ChatGPT-style interface.
 * **Replaces:** ChatGPT Plus, Poe
 * **Edge:** Multi-provider in a single conversation, agents, code interpreter, artifacts, MCP support, and genuinely good multi-user auth. MIT with no branding restrictions.
 
-### [Lobe Chat](https://github.com/lobehub/lobe-chat) ⭐ 83,018 | 🐛 1,030 | 🌐 TypeScript | 📅 2026-10-06
+### [Lobe Chat](https://github.com/lobehub/lobe-chat) ⭐ 83,040 | 🐛 1,032 | 🌐 TypeScript | 📅 2026-10-07
 
 `TypeScript` · `Apache-2.0` (with conditions) · 🟢 stable
 
@@ -709,7 +835,7 @@ Modern chat framework with a plugin and agent-market ecosystem.
 
 * **Edge:** The best-looking option, with PWA and mobile support plus one-click Vercel deploy.
 
-### [AnythingLLM](https://github.com/Mintplex-Labs/anything-llm) ⭐ 66,760 | 🐛 321 | 🌐 JavaScript | 📅 2026-10-06
+### [AnythingLLM](https://github.com/Mintplex-Labs/anything-llm) ⭐ 66,793 | 🐛 324 | 🌐 JavaScript | 📅 2026-10-07
 
 `JavaScript` · `MIT` · 🟢 stable
 
@@ -717,7 +843,16 @@ All-in-one desktop and Docker app: chat with your documents, with agents and mul
 
 * **Edge:** Batteries-included RAG — embedder, vector DB, and UI ship together. Fastest path from "I have PDFs" to "I can ask them questions."
 
-### [ThoughtDAG](https://github.com/chenxiachan/thoughtdag) ⭐ 565 | 🐛 11 | 🌐 TypeScript | 📅 2026-10-03
+### [Artifact Relay](https://github.com/eloktev/artifact-relay) ⭐ 2 | 🐛 1 | 🌐 Python | 📅 2026-09-10
+
+`Python + HTML` · `MIT` · `Server + Hermes plugin` · 🟢 stable
+
+Self-hosted delivery surface for publishing long Markdown and standalone HTML results from AI agents to private, mobile-friendly pages.
+
+* **Replaces:** private pastebins and chat-bound artifact viewers
+* **Edge:** Publisher and viewer credentials are separate trust boundaries. Markdown is sanitized, standalone HTML runs in a sandboxed iframe, and optional share links can be scoped and revoked without exposing the publishing credential.
+
+### [ThoughtDAG](https://github.com/chenxiachan/thoughtdag) ⭐ 574 | 🐛 7 | 🌐 TypeScript | 📅 2026-10-07
 
 `TypeScript` · `MIT` · Web · 🟠 experimental
 
@@ -736,11 +871,21 @@ Local-first workspace combining notes, tasks, and AI chat in your browser on you
 * **Replaces:** Notion AI, Obsidian + Copilot plugin
 * **Edge:** Plain markdown files on disk — no accounts, no cloud, no database. The AI reads and edits your actual workspace files. Supports Ollama for fully local inference.
 
+### [Aleph](https://github.com/josuecuguy1307/Aleph) ⭐ 2 | 🐛 0 | 🌐 Python | 📅 2026-10-07
+
+`TypeScript` · `Apache-2.0` · `macOS / Apple silicon desktop` · 🟡 active
+
+An AI workspace for bringing model providers, tools, and files together across focused workspaces and reusable agents.
+
+* **Replaces:** ChatGPT Desktop or Claude Desktop for users who want to configure their own agents, tools, and workflows.
+* **Backends:** User-configured model API providers and installed, authenticated CLI providers such as Claude Code and Codex; availability depends on setup.
+* **Edge:** The Workshop lets users compose agents, equip them with tools, and arrange reusable workflows visually, making the harness inspectable and changeable.
+
 ***
 
 ## Vector Databases
 
-### [Qdrant](https://github.com/qdrant/qdrant) ⭐ 34,950 | 🐛 752 | 🌐 Rust | 📅 2026-10-06
+### [Qdrant](https://github.com/qdrant/qdrant) ⭐ 34,965 | 🐛 750 | 🌐 Rust | 📅 2026-10-07
 
 `Rust` · `Apache-2.0` · 🟢 stable
 
@@ -749,7 +894,7 @@ Vector search engine with rich payload filtering, built for production.
 * **Replaces:** Pinecone
 * **Edge:** Written in Rust — predictable latency under load. Scalar/product/binary quantization cuts RAM dramatically. Filtered search stays accurate instead of degrading like naive pre/post-filtering.
 
-### [Milvus](https://github.com/milvus-io/milvus) ⭐ 46,327 | 🐛 1,395 | 🌐 Go | 📅 2026-10-06
+### [Milvus](https://github.com/milvus-io/milvus) ⭐ 46,332 | 🐛 1,402 | 🌐 Go | 📅 2026-10-07
 
 `Go + C++` · `Apache-2.0` · 🟢 stable
 
@@ -757,7 +902,7 @@ Distributed vector database built for billion-scale workloads.
 
 * **Edge:** Separated storage and compute, GPU indexing — the heaviest-duty option when the corpus genuinely is enormous. Milvus Lite covers local dev.
 
-### [Weaviate](https://github.com/weaviate/weaviate) ⭐ 16,866 | 🐛 802 | 🌐 Go | 📅 2026-10-06
+### [Weaviate](https://github.com/weaviate/weaviate) ⭐ 16,872 | 🐛 802 | 🌐 Go | 📅 2026-10-07
 
 `Go` · `BSD-3-Clause` · 🟢 stable
 
@@ -765,7 +910,7 @@ Vector database with built-in vectorization modules and a GraphQL API.
 
 * **Edge:** Module system embeds data for you at ingest. Native hybrid (BM25 + vector) search and multi-tenancy.
 
-### [Chroma](https://github.com/chroma-core/chroma) ⭐ 29,453 | 🐛 917 | 🌐 Rust | 📅 2026-10-06
+### [Chroma](https://github.com/chroma-core/chroma) ⭐ 29,460 | 🐛 916 | 🌐 Rust | 📅 2026-10-07
 
 `Rust + Python` · `Apache-2.0` · 🟢 stable
 
@@ -773,7 +918,7 @@ The batteries-included embedding database for AI applications.
 
 * **Edge:** `pip install chromadb` and you have a working vector store in four lines. The right default for prototypes; scale out later if you must.
 
-### [pgvector](https://github.com/pgvector/pgvector) ⭐ 23,257 | 🐛 17 | 🌐 C | 📅 2026-10-06
+### [pgvector](https://github.com/pgvector/pgvector) ⭐ 23,265 | 🐛 17 | 🌐 C | 📅 2026-10-07
 
 `C` · `PostgreSQL License` · 🟢 stable
 
@@ -796,7 +941,7 @@ Columnar database with AI-native retrieval — dense ANN, sparse vectors, full-t
 
 The retrieval quality layer. Swapping your embedding model usually beats swapping your vector database.
 
-### [FlagEmbedding / BGE](https://github.com/FlagOpen/FlagEmbedding) ⭐ 12,218 | 🐛 919 | 🌐 Python | 📅 2026-08-24
+### [FlagEmbedding / BGE](https://github.com/FlagOpen/FlagEmbedding) ⭐ 12,220 | 🐛 920 | 🌐 Python | 📅 2026-08-24
 
 `Python` · `MIT` · 🟢 stable
 
@@ -805,7 +950,7 @@ The BGE family — BGE-M3 embeddings and the BGE reranker models.
 * **Replaces:** OpenAI text-embedding-3, Cohere Embed, Cohere Rerank
 * **Edge:** BGE-M3 does dense, sparse (lexical), and multi-vector retrieval from one model across 100+ languages, so you get hybrid search without running two systems. Pairing BGE-M3 with a BGE reranker is the default open retrieval stack, and it runs on your own hardware with no per-query cost.
 
-### [Sentence Transformers](https://github.com/UKPLab/sentence-transformers) ⭐ 19,153 | 🐛 1,376 | 🌐 Python | 📅 2026-10-06
+### [Sentence Transformers](https://github.com/UKPLab/sentence-transformers) ⭐ 19,155 | 🐛 1,352 | 🌐 Python | 📅 2026-10-07
 
 `Python` · `Apache-2.0` · 🟢 stable
 
@@ -817,7 +962,7 @@ The library for computing, training, and fine-tuning text embeddings.
 
 ## RAG Frameworks
 
-### [LlamaIndex](https://github.com/run-llama/llama_index) ⭐ 52,423 | 🐛 899 | 🌐 Python | 📅 2026-10-06
+### [LlamaIndex](https://github.com/run-llama/llama_index) ⭐ 52,433 | 🐛 899 | 🌐 Python | 📅 2026-10-06
 
 `Python + TypeScript` · `MIT` · 🟢 stable
 
@@ -825,7 +970,7 @@ The data framework for LLM applications — ingestion, indexing, retrieval, and 
 
 * **Edge:** Hundreds of data connectors (LlamaHub) and the deepest library of retrieval strategies — hierarchical, recursive, hybrid, auto-merging. When naive top-k retrieval isn't good enough, the fix is usually already implemented here.
 
-### [RAGFlow](https://github.com/infiniflow/ragflow) ⭐ 91,736 | 🐛 1,617 | 🌐 Go | 📅 2026-10-06
+### [RAGFlow](https://github.com/infiniflow/ragflow) ⭐ 91,772 | 🐛 1,626 | 🌐 Go | 📅 2026-10-07
 
 `Python` · `Apache-2.0` · 🟢 stable
 
@@ -833,7 +978,7 @@ RAG engine built on deep document understanding — layout-aware parsing of PDFs
 
 * **Edge:** Document parsing is where most RAG systems actually fail. RAGFlow treats it as the core problem and shows you citation-grounded chunks so you can debug retrieval visually.
 
-### [Dify](https://github.com/langgenius/dify) ⭐ 157,963 | 🐛 1,064 | 🌐 TypeScript | 📅 2026-10-06
+### [Dify](https://github.com/langgenius/dify) ⭐ 158,037 | 🐛 1,074 | 🌐 TypeScript | 📅 2026-10-07
 
 `Python + TypeScript` · `Apache-2.0` (with conditions) · 🟢 stable
 
@@ -842,7 +987,7 @@ Production-ready platform for agentic workflows — visual builder, RAG pipeline
 * **Replaces:** OpenAI GPTs platform, Vertex AI Agent Builder
 * **Edge:** Non-engineers can build and ship an internal AI tool without touching code, while engineers keep API access to everything. Self-hosted, so your data stays put.
 
-### [Docling](https://github.com/docling-project/docling) ⭐ 68,457 | 🐛 1,009 | 🌐 Python | 📅 2026-10-06
+### [Docling](https://github.com/docling-project/docling) ⭐ 68,498 | 🐛 998 | 🌐 Python | 📅 2026-10-07
 
 `Python` · `MIT` · 🟢 stable
 
@@ -850,7 +995,7 @@ Parse PDF, DOCX, PPTX, HTML, and images into structured, LLM-ready formats.
 
 * **Edge:** Layout and table-structure models that handle real-world documents. Plugs directly into LlamaIndex and LangChain.
 
-### [Unstructured](https://github.com/Unstructured-IO/unstructured) ⭐ 15,532 | 🐛 334 | 🌐 HTML | 📅 2026-10-06
+### [Unstructured](https://github.com/Unstructured-IO/unstructured) ⭐ 15,540 | 🐛 335 | 🌐 HTML | 📅 2026-10-07
 
 `Python` · `Apache-2.0` · 🟢 stable
 
@@ -862,7 +1007,7 @@ Preprocessing library for ingesting unstructured documents into ML pipelines.
 
 ## Fine-Tuning & Training
 
-### [Unsloth](https://github.com/unslothai/unsloth) ⭐ 77,275 | 🐛 873 | 🌐 Python | 📅 2026-10-06
+### [Unsloth](https://github.com/unslothai/unsloth) ⭐ 77,354 | 🐛 862 | 🌐 Python | 📅 2026-10-07
 
 `Python` · `Apache-2.0` · 🟢 stable
 
@@ -870,7 +1015,7 @@ Fine-tune LLMs roughly 2x faster with far less VRAM, without accuracy loss.
 
 * **Edge:** Hand-written Triton kernels and a manual backprop engine. Makes fine-tuning a mid-size model on a single free Colab GPU realistic instead of aspirational.
 
-### [Axolotl](https://github.com/axolotl-ai-cloud/axolotl) ⭐ 12,526 | 🐛 244 | 🌐 Python | 📅 2026-10-06
+### [Axolotl](https://github.com/axolotl-ai-cloud/axolotl) ⭐ 12,532 | 🐛 245 | 🌐 Python | 📅 2026-10-07
 
 `Python` · `Apache-2.0` · 🟢 stable
 
@@ -878,7 +1023,7 @@ Post-training framework configured entirely through YAML — full fine-tune, LoR
 
 * **Edge:** One config file describes the entire run, which makes experiments reproducible and diffable in git.
 
-### [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory) ⭐ 75,334 | 🐛 1,172 | 🌐 Python | 📅 2026-09-28
+### [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory) ⭐ 75,347 | 🐛 1,176 | 🌐 Python | 📅 2026-09-28
 
 `Python` · `Apache-2.0` · 🟢 stable
 
@@ -886,7 +1031,7 @@ Unified fine-tuning for 100+ models, with a web UI.
 
 * **Edge:** Zero-code training via LlamaBoard. The widest model coverage of any tuning toolkit.
 
-### [PEFT](https://github.com/huggingface/peft) ⭐ 21,759 | 🐛 111 | 🌐 Python | 📅 2026-10-06
+### [PEFT](https://github.com/huggingface/peft) ⭐ 21,766 | 🐛 112 | 🌐 Python | 📅 2026-10-06
 
 `Python` · `Apache-2.0` · 🟢 stable
 
@@ -894,7 +1039,7 @@ Hugging Face's parameter-efficient fine-tuning library — LoRA, QLoRA, adapters
 
 * **Edge:** The reference implementation everything else builds on. Integrates directly with Transformers, Accelerate, and TRL.
 
-### [Distilabel](https://github.com/argilla-io/distilabel) ⭐ 3,408 | 🐛 110 | 🌐 Python | 📅 2026-10-06
+### [Distilabel](https://github.com/argilla-io/distilabel) ⭐ 3,409 | 🐛 110 | 🌐 Python | 📅 2026-10-06
 
 `Python` · `Apache-2.0` · 🟢 stable
 
@@ -902,7 +1047,7 @@ Synthetic data pipelines for SFT and preference tuning, from the Argilla team.
 
 * **Edge:** treats dataset generation as a reproducible pipeline rather than a pile of one-off scripts, and loops through Argilla so a human can curate what the model generated. The bottleneck in fine-tuning is almost always data, not compute.
 
-### [TRL](https://github.com/huggingface/trl) ⭐ 19,458 | 🐛 251 | 🌐 Python | 📅 2026-10-06
+### [TRL](https://github.com/huggingface/trl) ⭐ 19,468 | 🐛 255 | 🌐 Python | 📅 2026-10-07
 
 `Python` · `Apache-2.0` · 🟢 stable
 
@@ -914,13 +1059,23 @@ Train transformer models with reinforcement learning — SFT, DPO, GRPO, reward 
 
 ## Evals, Testing & Guardrails
 
-### [promptfoo](https://github.com/promptfoo/promptfoo) ⭐ 25,759 | 🐛 713 | 🌐 TypeScript | 📅 2026-10-06
+### [promptfoo](https://github.com/promptfoo/promptfoo) ⭐ 25,795 | 🐛 716 | 🌐 TypeScript | 📅 2026-10-07
 
 `TypeScript` · `MIT` · 🟢 stable
 
 Test and evaluate prompts, agents, and RAG systems — plus LLM red teaming and vulnerability scanning.
 
 * **Edge:** Declarative test cases in YAML that run in CI. Side-by-side model comparison plus adversarial red-teaming in one tool. Local-first — your prompts never leave your machine.
+
+### [Cage](https://github.com/vitalik1921/cage) ⭐ 3 | 🐛 4 | 🌐 TypeScript | 📅 2026-10-07
+
+`TypeScript` · `MIT` · CLI + agent hooks · 🟡 active
+
+Deterministic contract harness that links Markdown specs to TypeScript implementations, invariant-linked tests, and review freshness.
+
+* **Replaces:** Manual spec-to-code and test-traceability checklists
+* **Backends:** Claude Code, Codex
+* **Edge:** Parses `*.cage.mdx` specs into TypeScript contract checks, tracks `@invariant`/`@covers` links, and fingerprints spec, code, test, and import material to detect stale reviews. It does not run tests or prove semantic correctness.
 
 ### [agent-qa](https://github.com/vostride/agent-qa) ⭐ 901 | 🐛 0 | 🌐 TypeScript | 📅 2026-08-03
 
@@ -931,7 +1086,7 @@ The self-improving QA agent for software teams, with natural-language web and mo
 * **Backends:** OpenAI- and Anthropic-compatible endpoints, Gemini, and local models
 * **Edge:** Stores product, suite, test, and healed-step observations as versioned execution memory, then reuses that context on later runs. Ships a dashboard, CLI, MCP server, and three agent skills in one repository.
 
-### [ClawBench](https://github.com/reacher-z/ClawBench) ⭐ 959 | 🐛 51 | 🌐 Python | 📅 2026-10-05
+### [ClawBench](https://github.com/reacher-z/ClawBench) ⭐ 968 | 🐛 51 | 🌐 Python | 📅 2026-10-05
 
 `Python` · `Apache-2.0` · Docker/browser harness · 🟡 active
 
@@ -939,7 +1094,7 @@ Evaluate web agents on 153 everyday tasks across 144 live websites, with the fin
 
 * **Edge:** Captures session replay, screenshots, HTTP traffic, browser actions, and agent messages in one reproducible run, making failures diagnosable beyond a final pass/fail score.
 
-### [DeepEval](https://github.com/confident-ai/deepeval) ⭐ 18,660 | 🐛 710 | 🌐 Python | 📅 2026-10-05
+### [DeepEval](https://github.com/confident-ai/deepeval) ⭐ 18,683 | 🐛 709 | 🌐 Python | 📅 2026-10-07
 
 `Python` · `Apache-2.0` · 🟢 stable
 
@@ -947,7 +1102,7 @@ Evaluate web agents on 153 everyday tasks across 144 live websites, with the fin
 
 * **Edge:** Feels like a normal test suite. G-Eval, faithfulness, answer relevancy, hallucination, and RAG-specific metrics run locally on the model of your choice.
 
-### [Ragas](https://github.com/explodinggradients/ragas) ⭐ 15,948 | 🐛 628 | 🌐 Python | 📅 2026-02-24
+### [Ragas](https://github.com/explodinggradients/ragas) ⭐ 15,952 | 🐛 627 | 🌐 Python | 📅 2026-02-24
 
 `Python` · `Apache-2.0` · 🟢 stable
 
@@ -955,7 +1110,7 @@ Evaluation toolkit for RAG pipelines.
 
 * **Edge:** Splits retrieval quality from generation quality, so you know which half to fix. Can synthesize a test set from your own documents.
 
-### [Guardrails](https://github.com/guardrails-ai/guardrails) ⭐ 7,492 | 🐛 72 | 🌐 Python | 📅 2026-10-06
+### [Guardrails](https://github.com/guardrails-ai/guardrails) ⭐ 7,495 | 🐛 72 | 🌐 Python | 📅 2026-10-06
 
 `Python` · `Apache-2.0` · 🟢 stable
 
@@ -963,7 +1118,7 @@ Add input/output validators to LLM applications — structure, safety, PII, and 
 
 * **Edge:** Validators are composable and re-ask the model on failure rather than just erroring out.
 
-### [NeMo Guardrails](https://github.com/NVIDIA/NeMo-Guardrails) ⭐ 7,248 | 🐛 262 | 🌐 Python | 📅 2026-10-06
+### [NeMo Guardrails](https://github.com/NVIDIA/NeMo-Guardrails) ⭐ 7,260 | 🐛 261 | 🌐 Python | 📅 2026-10-07
 
 `Python` · `Apache-2.0` · 🟢 stable
 
@@ -971,7 +1126,7 @@ Programmable rails for conversational systems, defined in the Colang modeling la
 
 * **Edge:** Dialogue-level control — keep a bot on topic, block jailbreaks, enforce a conversation flow.
 
-### [Garak](https://github.com/NVIDIA/garak) ⭐ 9,465 | 🐛 488 | 🌐 Python | 📅 2026-10-02
+### [Garak](https://github.com/NVIDIA/garak) ⭐ 9,490 | 🐛 479 | 🌐 Python | 📅 2026-10-07
 
 `Python` · `Apache-2.0` · 🟢 stable
 
@@ -983,7 +1138,7 @@ LLM vulnerability scanner — probes for prompt injection, jailbreaks, data leak
 
 ## Observability & LLMOps
 
-### [Langfuse](https://github.com/langfuse/langfuse) ⭐ 35,443 | 🐛 1,023 | 🌐 TypeScript | 📅 2026-10-06
+### [Langfuse](https://github.com/langfuse/langfuse) ⭐ 35,492 | 🐛 1,008 | 🌐 TypeScript | 📅 2026-10-07
 
 `TypeScript` · `MIT` (core) · 🟢 stable
 
@@ -992,7 +1147,7 @@ Open-source LLM engineering platform — tracing, evals, prompt management, and 
 * **Replaces:** LangSmith
 * **Edge:** MIT-licensed core that you can genuinely self-host. Framework-agnostic via OpenTelemetry. Nested traces make multi-agent debugging tractable, and prompt versioning decouples prompt changes from deploys.
 
-### [Phoenix](https://github.com/Arize-ai/phoenix) ⭐ 11,733 | 🐛 1,090 | 🌐 Python | 📅 2026-10-06
+### [Phoenix](https://github.com/Arize-ai/phoenix) ⭐ 11,744 | 🐛 1,116 | 🌐 Python | 📅 2026-10-07
 
 `Python + TypeScript` · `Elastic-2.0` · 🟢 stable
 
@@ -1000,7 +1155,7 @@ AI observability and evaluation, built on OpenTelemetry and OpenInference.
 
 * **Edge:** Runs in a notebook for local debugging or as a server for production. Strong embedding-drift and retrieval-quality visualizations.
 
-### [OpenLLMetry](https://github.com/traceloop/openllmetry) ⭐ 7,469 | 🐛 746 | 🌐 Python | 📅 2026-10-06
+### [OpenLLMetry](https://github.com/traceloop/openllmetry) ⭐ 7,474 | 🐛 748 | 🌐 Python | 📅 2026-10-06
 
 `Python + TypeScript` · `Apache-2.0` · 🟢 stable
 
@@ -1016,7 +1171,7 @@ Monitors background Claude Code and Codex jobs as RUNNING, DONE, FAILED, or STAL
 
 * **Edge:** Separates transport failures from credential failures before workers start by probing without credentials in the child process, then runs the optional auth probe only after reachability succeeds.
 
-### [Helicone](https://github.com/Helicone/helicone) ⭐ 6,201 | 🐛 167 | 🌐 TypeScript | 📅 2026-09-16
+### [Helicone](https://github.com/Helicone/helicone) ⭐ 6,206 | 🐛 167 | 🌐 TypeScript | 📅 2026-09-16
 
 `TypeScript` · `Apache-2.0` · 🟢 stable
 
@@ -1032,11 +1187,19 @@ Dependency-free browser calculator for estimating AI model API costs from reques
 
 * **Edge:** Runs locally without API keys, accounts, cookies, analytics, or server-side processing. The tested formula separates cached from uncached input and keeps provider-specific pricing assumptions visible so estimates can be reviewed before a real bill is incurred.
 
+### [OrcaReplay](https://github.com/Continuum-AI-Corp/OrcaReplay) ⭐ 281 | 🐛 1 | 🌐 TypeScript | 📅 2026-10-01
+
+`TypeScript` · `Apache-2.0` · 🟢 stable
+
+Records a coding agent's exchange with its model provider and replays the run offline with no model called.
+
+* **Edge:** The other tools here tell you what happened; this one runs it again. Replay serves the recorded turns with no provider contacted and nothing spent, and `--from N --model M` replays a prefix then continues on a different model, so the model is the only variable. Captures at the HTTP boundary rather than through instrumentation — aider, OpenHands and goose from the sections above are covered, along with Claude Code and the Vercel AI SDK. The trace format is specified separately under CC BY 4.0, so a recording outlives the CLI.
+
 ***
 
 ## Speech, Vision & Multimodal
 
-### [Whisper](https://github.com/openai/whisper) ⭐ 110,049 | 🐛 163 | 🌐 Python | 📅 2026-08-31 / [faster-whisper](https://github.com/SYSTRAN/faster-whisper) ⭐ 25,728 | 🐛 39 | 🌐 Python | 📅 2026-10-06 / [whisper.cpp](https://github.com/ggml-org/whisper.cpp) ⭐ 54,175 | 🐛 351 | 🌐 C++ | 📅 2026-10-06
+### [Whisper](https://github.com/openai/whisper) ⭐ 110,108 | 🐛 166 | 🌐 Python | 📅 2026-08-31 / [faster-whisper](https://github.com/SYSTRAN/faster-whisper) ⭐ 25,744 | 🐛 35 | 🌐 Python | 📅 2026-10-06 / [whisper.cpp](https://github.com/ggml-org/whisper.cpp) ⭐ 54,204 | 🐛 351 | 🌐 C++ | 📅 2026-10-06
 
 `MIT` · 🟢 stable
 
@@ -1045,7 +1208,7 @@ Speech-to-text: the original model, the CTranslate2 port (substantially faster),
 * **Replaces:** Google Speech-to-Text, AssemblyAI
 * **Edge:** State-of-the-art multilingual ASR for free, on your own hardware. `whisper.cpp` runs real-time transcription on a laptop CPU.
 
-### [WhisperX](https://github.com/m-bain/whisperX) ⭐ 24,392 | 🐛 232 | 🌐 Python | 📅 2026-09-26
+### [WhisperX](https://github.com/m-bain/whisperX) ⭐ 24,411 | 🐛 232 | 🌐 Python | 📅 2026-09-26
 
 `Python` · `BSD-2-Clause` · 🟢 stable
 
@@ -1053,7 +1216,7 @@ Whisper plus word-level timestamps and speaker diarization.
 
 * **Edge:** If you need to know *who* said *what, when* — subtitles, meeting notes — this is the one.
 
-### [Kokoro](https://github.com/hexgrad/kokoro) ⭐ 9,185 | 🐛 214 | 🌐 JavaScript | 📅 2025-08-06 / [Piper](https://github.com/OHF-Voice/piper1-gpl) ⭐ 5,779 | 🐛 140 | 🌐 C++ | 📅 2026-09-28
+### [Kokoro](https://github.com/hexgrad/kokoro) ⭐ 9,193 | 🐛 214 | 🌐 JavaScript | 📅 2025-08-06 / [Piper](https://github.com/OHF-Voice/piper1-gpl) ⭐ 5,788 | 🐛 142 | 🌐 C++ | 📅 2026-10-06
 
 `Apache-2.0` / `GPL-3.0` · 🟢 stable
 
@@ -1062,7 +1225,7 @@ Text-to-speech. Kokoro is a tiny (\~82M parameter) model with quality far above 
 * **Replaces:** ElevenLabs
 * **Edge:** Real-time TTS on CPU. Kokoro's small footprint makes it viable to bundle inside an app.
 
-### [Pipecat](https://github.com/pipecat-ai/pipecat) ⭐ 16,227 | 🐛 375 | 🌐 Python | 📅 2026-10-06
+### [Pipecat](https://github.com/pipecat-ai/pipecat) ⭐ 16,246 | 🐛 368 | 🌐 Python | 📅 2026-10-07
 
 `Python` · Library · 🟢 stable
 
@@ -1071,7 +1234,7 @@ Framework for real-time voice and multimodal conversational agents.
 * **Replaces:** Vapi, Retell
 * **Edge:** pluggable STT/TTS/LLM stages over WebRTC, plus speech-to-speech model support, so you can assemble a voice agent from open parts instead of renting a platform. **Known weakness:** maintainers' own issue tracker documents pipeline freezes, zombie function-call handlers after timeout, and multi-second latency in production. The linear pipeline model also fits multi-party conversation badly. Expect real engineering effort.
 
-### [LiveKit Agents](https://github.com/livekit/agents) ⭐ 14,626 | 🐛 949 | 🌐 Python | 📅 2026-10-06
+### [LiveKit Agents](https://github.com/livekit/agents) ⭐ 14,636 | 🐛 945 | 🌐 Python | 📅 2026-10-07
 
 `Python + Node` · `Apache-2.0` · Framework · 🟢 stable
 
@@ -1080,7 +1243,7 @@ Realtime agent framework built on LiveKit's WebRTC infrastructure.
 * **Replaces:** Vapi, Retell
 * **Edge:** the room/participant model handles multi-party and interruption natively, where a linear pipeline has to fake it. If your voice agent needs more than one human in the call, start here rather than with a pipeline framework.
 
-### [ComfyUI](https://github.com/comfyanonymous/ComfyUI) ⭐ 136,332 | 🐛 5,069 | 🌐 Python | 📅 2026-10-06
+### [ComfyUI](https://github.com/comfyanonymous/ComfyUI) ⭐ 136,480 | 🐛 5,083 | 🌐 Python | 📅 2026-10-07
 
 `Python` · `GPL-3.0` · 🟢 stable
 
@@ -1089,7 +1252,7 @@ Node-based interface for diffusion models — image, video, and audio generation
 * **Replaces:** Midjourney, DALL·E
 * **Edge:** The graph *is* the program — every step is inspectable and reproducible, and workflows are shareable as JSON. Supports essentially every open image/video model within days of release.
 
-### [Surya](https://github.com/datalab-to/surya) ⭐ 21,455 | 🐛 198 | 🌐 Python | 📅 2026-09-11
+### [Surya](https://github.com/datalab-to/surya) ⭐ 21,473 | 🐛 198 | 🌐 Python | 📅 2026-09-11
 
 `Python` · `GPL-3.0` (commercial exceptions) · 🟡 active
 
@@ -1101,7 +1264,7 @@ Document OCR, layout analysis, and reading-order detection in 90+ languages.
 
 ## Low-Code / Visual Builders
 
-### [n8n](https://github.com/n8n-io/n8n) ⭐ 206,772 | 🐛 1,133 | 🌐 TypeScript | 📅 2026-10-06
+### [n8n](https://github.com/n8n-io/n8n) ⭐ 206,822 | 🐛 1,164 | 🌐 TypeScript | 📅 2026-10-07
 
 `TypeScript` · `Sustainable Use License` (fair-code, source-available) · 🟢 stable
 
@@ -1118,7 +1281,7 @@ Drag-and-drop builder for LLM flows and agents.
 
 * **Edge:** Fastest way to prototype a RAG chatbot visually and expose it as an API or embeddable widget.
 
-### [Langflow](https://github.com/langflow-ai/langflow) ⭐ 155,545 | 🐛 1,140 | 🌐 Python | 📅 2026-10-06
+### [Langflow](https://github.com/langflow-ai/langflow) ⭐ 155,568 | 🐛 1,145 | 🌐 Python | 📅 2026-10-07
 
 `Python` · `MIT` · 🟢 stable
 
@@ -1132,26 +1295,26 @@ Visual framework for building multi-agent and RAG applications.
 
 | You're paying for                   | Use instead                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 | ----------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| GitHub Copilot                      | [Continue](https://github.com/continuedev/continue) ⭐ 36,133 \| 🐛 829 \| 🌐 TypeScript \| 📅 2026-10-05, [Tabby](https://github.com/TabbyML/tabby) ⭐ 33,901 \| 🐛 341 \| 🌐 Rust \| 📅 2026-06-30, [aider](https://github.com/Aider-AI/aider) ⭐ 49,398 \| 🐛 1,910 \| 🌐 Python \| 📅 2026-05-22                                                                                                                                                                                                                       |
-| Cursor / Windsurf                   | [Cline](https://github.com/cline/cline) ⭐ 69,943 \| 🐛 1,609 \| 🌐 TypeScript \| 📅 2026-10-06, [OpenCode](https://github.com/sst/opencode) ⭐ 212,027 \| 🐛 6,256 \| 🌐 TypeScript \| 📅 2026-10-06, [Continue](https://github.com/continuedev/continue) ⭐ 36,133 \| 🐛 829 \| 🌐 TypeScript \| 📅 2026-10-05, [BitFun](https://github.com/GCWing/BitFun) ⭐ 2,393 \| 🐛 85 \| 🌐 Rust \| 📅 2026-10-05, [Atomic Agent](https://github.com/AtomicBot-ai/atomic-agent) ⭐ 2,905 \| 🐛 35 \| 🌐 TypeScript \| 📅 2026-10-06 |
-| Devin                               | [OpenHands](https://github.com/All-Hands-AI/OpenHands) ⭐ 90,119 \| 🐛 895 \| 🌐 TypeScript \| 📅 2026-10-06, [Goose](https://github.com/block/goose) ⭐ 55,006 \| 🐛 455 \| 🌐 Rust \| 📅 2026-10-06, [SWE-agent](https://github.com/SWE-agent/SWE-agent) ⭐ 20,495 \| 🐛 151 \| 🌐 Python \| 📅 2026-10-06                                                                                                                                                                                                               |
-| Claude Design / Figma Make          | [Open Design](https://github.com/nexu-io/open-design) ⭐ 99,703 \| 🐛 1,156 \| 🌐 TypeScript \| 📅 2026-10-06                                                                                                                                                                                                                                                                                                                                                                                                            |
-| ChatGPT desktop / Copilot assistant | [OpenClaw](https://github.com/openclaw/openclaw) ⭐ 391,508 \| 🐛 9,478 \| 🌐 TypeScript \| 📅 2026-10-06, [Hermes Agent](https://github.com/NousResearch/hermes-agent) ⭐ 251,670 \| 🐛 47,762 \| 🌐 Python \| 📅 2026-10-06                                                                                                                                                                                                                                                                                             |
-| Bolt.new / v0 / Lovable             | [bolt.diy](https://github.com/stackblitz-labs/bolt.diy) ⭐ 19,930 \| 🐛 144 \| 🌐 TypeScript \| 📅 2026-10-06, [OpenUI](https://github.com/wandb/openui) ⭐ 22,567 \| 🐛 88 \| 🌐 TypeScript \| 📅 2026-09-25, [Dyad](https://github.com/dyad-sh/dyad) ⭐ 21,660 \| 🐛 324 \| 🌐 TypeScript \| 📅 2026-10-05                                                                                                                                                                                                               |
-| ChatGPT Plus / Claude Pro           | [Open WebUI](https://github.com/open-webui/open-webui) ⭐ 154,092 \| 🐛 270 \| 🌐 Python \| 📅 2026-10-06, [LibreChat](https://github.com/danny-avila/LibreChat) ⭐ 45,340 \| 🐛 850 \| 🌐 TypeScript \| 📅 2026-10-06, [Jan](https://github.com/menloresearch/jan) ⭐ 44,826 \| 🐛 541 \| 🌐 Rust \| 📅 2026-10-06                                                                                                                                                                                                        |
-| OpenAI API (inference)              | [vLLM](https://github.com/vllm-project/vllm) ⭐ 93,286 \| 🐛 8,510 \| 🌐 Python \| 📅 2026-10-06, [Ollama](https://github.com/ollama/ollama) ⭐ 182,384 \| 🐛 4,184 \| 🌐 Go \| 📅 2026-10-06, [LocalAI](https://github.com/mudler/LocalAI) ⭐ 49,414 \| 🐛 173 \| 🌐 Go \| 📅 2026-10-06, [SGLang](https://github.com/sgl-project/sglang) ⭐ 36,820 \| 🐛 5,558 \| 🌐 Python \| 📅 2026-10-06                                                                                                                              |
-| OpenAI Assistants API               | [Letta](https://github.com/letta-ai/letta) ⭐ 25,050 \| 🐛 0 \| 📅 2026-09-10, [Dify](https://github.com/langgenius/dify) ⭐ 157,963 \| 🐛 1,064 \| 🌐 TypeScript \| 📅 2026-10-06                                                                                                                                                                                                                                                                                                                                        |
-| Pinecone                            | [Qdrant](https://github.com/qdrant/qdrant) ⭐ 34,950 \| 🐛 752 \| 🌐 Rust \| 📅 2026-10-06, [pgvector](https://github.com/pgvector/pgvector) ⭐ 23,257 \| 🐛 17 \| 🌐 C \| 📅 2026-10-06, [Chroma](https://github.com/chroma-core/chroma) ⭐ 29,453 \| 🐛 917 \| 🌐 Rust \| 📅 2026-10-06, [MongrelDB](https://github.com/visorcraft/MongrelDB) ⭐ 9 \| 🐛 2 \| 🌐 Rust \| 📅 2026-10-02                                                                                                                                    |
-| LangSmith                           | [Langfuse](https://github.com/langfuse/langfuse) ⭐ 35,443 \| 🐛 1,023 \| 🌐 TypeScript \| 📅 2026-10-06, [Phoenix](https://github.com/Arize-ai/phoenix) ⭐ 11,733 \| 🐛 1,090 \| 🌐 Python \| 📅 2026-10-06                                                                                                                                                                                                                                                                                                              |
-| OpenRouter                          | [LiteLLM](https://github.com/BerriAI/litellm) ⭐ 60,240 \| 🐛 5,236 \| 🌐 Python \| 📅 2026-10-06 proxy                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| ElevenLabs                          | [Kokoro](https://github.com/hexgrad/kokoro) ⭐ 9,185 \| 🐛 214 \| 🌐 JavaScript \| 📅 2025-08-06, [Piper](https://github.com/OHF-Voice/piper1-gpl) ⭐ 5,779 \| 🐛 140 \| 🌐 C++ \| 📅 2026-09-28                                                                                                                                                                                                                                                                                                                          |
-| AssemblyAI / Deepgram               | [faster-whisper](https://github.com/SYSTRAN/faster-whisper) ⭐ 25,728 \| 🐛 39 \| 🌐 Python \| 📅 2026-10-06, [WhisperX](https://github.com/m-bain/whisperX) ⭐ 24,392 \| 🐛 232 \| 🌐 Python \| 📅 2026-09-26                                                                                                                                                                                                                                                                                                            |
-| Midjourney / DALL·E                 | [ComfyUI](https://github.com/comfyanonymous/ComfyUI) ⭐ 136,332 \| 🐛 5,069 \| 🌐 Python \| 📅 2026-10-06                                                                                                                                                                                                                                                                                                                                                                                                                |
-| Zapier / Make                       | [n8n](https://github.com/n8n-io/n8n) ⭐ 206,772 \| 🐛 1,133 \| 🌐 TypeScript \| 📅 2026-10-06                                                                                                                                                                                                                                                                                                                                                                                                                            |
-| Vapi / Retell                       | [LiveKit Agents](https://github.com/livekit/agents) ⭐ 14,626 \| 🐛 949 \| 🌐 Python \| 📅 2026-10-06, [Pipecat](https://github.com/pipecat-ai/pipecat) ⭐ 16,227 \| 🐛 375 \| 🌐 Python \| 📅 2026-10-06                                                                                                                                                                                                                                                                                                                 |
-| Cohere Embed / Rerank               | [FlagEmbedding / BGE](https://github.com/FlagOpen/FlagEmbedding) ⭐ 12,218 \| 🐛 919 \| 🌐 Python \| 📅 2026-08-24                                                                                                                                                                                                                                                                                                                                                                                                       |
-| Browserbase / Stagehand             | [browser-use](https://github.com/browser-use/browser-use) ⭐ 117,272 \| 🐛 539 \| 🌐 Python \| 📅 2026-10-06, [Skyvern](https://github.com/Skyvern-AI/skyvern) ⭐ 23,143 \| 🐛 275 \| 🌐 Python \| 📅 2026-10-06                                                                                                                                                                                                                                                                                                          |
-| OpenAI GPTs platform                | [Dify](https://github.com/langgenius/dify) ⭐ 157,963 \| 🐛 1,064 \| 🌐 TypeScript \| 📅 2026-10-06, [Flowise](https://github.com/FlowiseAI/Flowise) ⚠️ Archived                                                                                                                                                                                                                                                                                                                                                         |
+| GitHub Copilot                      | [Continue](https://github.com/continuedev/continue) ⭐ 36,147 \| 🐛 834 \| 🌐 TypeScript \| 📅 2026-10-07, [Tabby](https://github.com/TabbyML/tabby) ⭐ 33,906 \| 🐛 341 \| 🌐 Rust \| 📅 2026-06-30, [aider](https://github.com/Aider-AI/aider) ⭐ 49,411 \| 🐛 1,914 \| 🌐 Python \| 📅 2026-05-22                                                                                                                                                                                                                       |
+| Cursor / Windsurf                   | [Cline](https://github.com/cline/cline) ⭐ 69,989 \| 🐛 1,618 \| 🌐 TypeScript \| 📅 2026-10-07, [OpenCode](https://github.com/sst/opencode) ⭐ 212,196 \| 🐛 6,264 \| 🌐 TypeScript \| 📅 2026-10-07, [Continue](https://github.com/continuedev/continue) ⭐ 36,147 \| 🐛 834 \| 🌐 TypeScript \| 📅 2026-10-07, [BitFun](https://github.com/GCWing/BitFun) ⭐ 2,396 \| 🐛 81 \| 🌐 Rust \| 📅 2026-10-07, [Atomic Agent](https://github.com/AtomicBot-ai/atomic-agent) ⭐ 3,001 \| 🐛 36 \| 🌐 TypeScript \| 📅 2026-10-07 |
+| Devin                               | [OpenHands](https://github.com/All-Hands-AI/OpenHands) ⭐ 90,199 \| 🐛 916 \| 🌐 TypeScript \| 📅 2026-10-07, [Goose](https://github.com/block/goose) ⭐ 55,042 \| 🐛 470 \| 🌐 Rust \| 📅 2026-10-07, [SWE-agent](https://github.com/SWE-agent/SWE-agent) ⭐ 20,497 \| 🐛 152 \| 🌐 Python \| 📅 2026-10-06, [LoopTroop](https://github.com/looptroop-ai/LoopTroop) ⭐ 159 \| 🐛 1 \| 🌐 TypeScript \| 📅 2026-10-07, [5dive](https://github.com/5dive-ai/5dive) ⭐ 66 \| 🐛 12 \| 🌐 Shell \| 📅 2026-10-07                |
+| Claude Design / Figma Make          | [Open Design](https://github.com/nexu-io/open-design) ⭐ 99,856 \| 🐛 1,165 \| 🌐 TypeScript \| 📅 2026-10-07                                                                                                                                                                                                                                                                                                                                                                                                            |
+| ChatGPT desktop / Copilot assistant | [OpenClaw](https://github.com/openclaw/openclaw) ⭐ 391,594 \| 🐛 9,445 \| 🌐 TypeScript \| 📅 2026-10-07, [Hermes Agent](https://github.com/NousResearch/hermes-agent) ⭐ 251,915 \| 🐛 47,710 \| 🌐 Python \| 📅 2026-10-07                                                                                                                                                                                                                                                                                             |
+| Bolt.new / v0 / Lovable             | [bolt.diy](https://github.com/stackblitz-labs/bolt.diy) ⭐ 19,931 \| 🐛 59 \| 🌐 TypeScript \| 📅 2026-10-07, [OpenUI](https://github.com/wandb/openui) ⭐ 22,566 \| 🐛 88 \| 🌐 TypeScript \| 📅 2026-09-25, [Dyad](https://github.com/dyad-sh/dyad) ⭐ 21,743 \| 🐛 315 \| 🌐 TypeScript \| 📅 2026-10-07                                                                                                                                                                                                                |
+| ChatGPT Plus / Claude Pro           | [Open WebUI](https://github.com/open-webui/open-webui) ⭐ 154,159 \| 🐛 283 \| 🌐 Python \| 📅 2026-10-07, [LibreChat](https://github.com/danny-avila/LibreChat) ⭐ 45,375 \| 🐛 854 \| 🌐 TypeScript \| 📅 2026-10-07, [Jan](https://github.com/menloresearch/jan) ⭐ 44,842 \| 🐛 540 \| 🌐 Rust \| 📅 2026-10-07                                                                                                                                                                                                        |
+| OpenAI API (inference)              | [vLLM](https://github.com/vllm-project/vllm) ⭐ 93,341 \| 🐛 8,556 \| 🌐 Python \| 📅 2026-10-07, [Ollama](https://github.com/ollama/ollama) ⭐ 182,490 \| 🐛 4,201 \| 🌐 Go \| 📅 2026-10-07, [LocalAI](https://github.com/mudler/LocalAI) ⭐ 49,423 \| 🐛 176 \| 🌐 Go \| 📅 2026-10-07, [SGLang](https://github.com/sgl-project/sglang) ⭐ 36,839 \| 🐛 5,608 \| 🌐 Python \| 📅 2026-10-07                                                                                                                              |
+| OpenAI Assistants API               | [Letta](https://github.com/letta-ai/letta) ⭐ 25,070 \| 🐛 0 \| 📅 2026-09-10, [Dify](https://github.com/langgenius/dify) ⭐ 158,037 \| 🐛 1,074 \| 🌐 TypeScript \| 📅 2026-10-07                                                                                                                                                                                                                                                                                                                                        |
+| Pinecone                            | [Qdrant](https://github.com/qdrant/qdrant) ⭐ 34,965 \| 🐛 750 \| 🌐 Rust \| 📅 2026-10-07, [pgvector](https://github.com/pgvector/pgvector) ⭐ 23,265 \| 🐛 17 \| 🌐 C \| 📅 2026-10-07, [Chroma](https://github.com/chroma-core/chroma) ⭐ 29,460 \| 🐛 916 \| 🌐 Rust \| 📅 2026-10-07, [MongrelDB](https://github.com/visorcraft/MongrelDB) ⭐ 9 \| 🐛 2 \| 🌐 Rust \| 📅 2026-10-02                                                                                                                                    |
+| LangSmith                           | [Langfuse](https://github.com/langfuse/langfuse) ⭐ 35,492 \| 🐛 1,008 \| 🌐 TypeScript \| 📅 2026-10-07, [Phoenix](https://github.com/Arize-ai/phoenix) ⭐ 11,744 \| 🐛 1,116 \| 🌐 Python \| 📅 2026-10-07                                                                                                                                                                                                                                                                                                              |
+| OpenRouter                          | [LiteLLM](https://github.com/BerriAI/litellm) ⭐ 60,299 \| 🐛 5,282 \| 🌐 Python \| 📅 2026-10-07 proxy                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| ElevenLabs                          | [Kokoro](https://github.com/hexgrad/kokoro) ⭐ 9,193 \| 🐛 214 \| 🌐 JavaScript \| 📅 2025-08-06, [Piper](https://github.com/OHF-Voice/piper1-gpl) ⭐ 5,788 \| 🐛 142 \| 🌐 C++ \| 📅 2026-10-06                                                                                                                                                                                                                                                                                                                          |
+| AssemblyAI / Deepgram               | [faster-whisper](https://github.com/SYSTRAN/faster-whisper) ⭐ 25,744 \| 🐛 35 \| 🌐 Python \| 📅 2026-10-06, [WhisperX](https://github.com/m-bain/whisperX) ⭐ 24,411 \| 🐛 232 \| 🌐 Python \| 📅 2026-09-26                                                                                                                                                                                                                                                                                                            |
+| Midjourney / DALL·E                 | [ComfyUI](https://github.com/comfyanonymous/ComfyUI) ⭐ 136,480 \| 🐛 5,083 \| 🌐 Python \| 📅 2026-10-07                                                                                                                                                                                                                                                                                                                                                                                                                |
+| Zapier / Make                       | [n8n](https://github.com/n8n-io/n8n) ⭐ 206,822 \| 🐛 1,164 \| 🌐 TypeScript \| 📅 2026-10-07                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| Vapi / Retell                       | [LiveKit Agents](https://github.com/livekit/agents) ⭐ 14,636 \| 🐛 945 \| 🌐 Python \| 📅 2026-10-07, [Pipecat](https://github.com/pipecat-ai/pipecat) ⭐ 16,246 \| 🐛 368 \| 🌐 Python \| 📅 2026-10-07                                                                                                                                                                                                                                                                                                                 |
+| Cohere Embed / Rerank               | [FlagEmbedding / BGE](https://github.com/FlagOpen/FlagEmbedding) ⭐ 12,220 \| 🐛 920 \| 🌐 Python \| 📅 2026-08-24                                                                                                                                                                                                                                                                                                                                                                                                       |
+| Browserbase / Stagehand             | [browser-use](https://github.com/browser-use/browser-use) ⭐ 117,381 \| 🐛 543 \| 🌐 Python \| 📅 2026-10-07, [Skyvern](https://github.com/Skyvern-AI/skyvern) ⭐ 23,151 \| 🐛 274 \| 🌐 Python \| 📅 2026-10-07                                                                                                                                                                                                                                                                                                          |
+| OpenAI GPTs platform                | [Dify](https://github.com/langgenius/dify) ⭐ 158,037 \| 🐛 1,074 \| 🌐 TypeScript \| 📅 2026-10-07, [Flowise](https://github.com/FlowiseAI/Flowise) ⚠️ Archived                                                                                                                                                                                                                                                                                                                                                         |
 
 ***
 
@@ -1217,4 +1380,4 @@ To the extent possible under law, contributors have waived all copyright and rel
 
 ***
 
-> _Enhansomed by [enhansome](https://github.com/enhansome) on 2026-10-06._
+> _Enhansomed by [enhansome](https://github.com/enhansome) on 2026-10-07._
